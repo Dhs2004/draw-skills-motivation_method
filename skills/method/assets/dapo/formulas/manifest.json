@@ -12,10 +12,10 @@
   {
     "name": "advantage",
     "latex": "\\hat A_{i,t}=\\hat A_i=\\frac{R_i-\\operatorname{mean}(R)}{\\operatorname{std}(R)}",
-    "x": 1148.4075,
-    "y": 171.44625,
-    "width": 244.185,
-    "height": 41.1075,
+    "x": 1136.19825,
+    "y": 169.390875,
+    "width": 268.6035,
+    "height": 45.218250000000005,
     "size": 25,
     "renderSource": "https://www.latexlive.com/"
   },

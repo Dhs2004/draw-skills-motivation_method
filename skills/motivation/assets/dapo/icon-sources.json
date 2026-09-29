@@ -1,0 +1,23 @@
+[
+  {
+    "name": "seedling",
+    "url": "https://raw.githubusercontent.com/hfg-gmuend/openmoji/master/color/svg/1F331.svg",
+    "author": "OpenMoji contributors",
+    "license": "CC BY-SA 4.0",
+    "modifications": "Rasterized and cropped transparent margins"
+  },
+  {
+    "name": "ruler",
+    "url": "https://raw.githubusercontent.com/hfg-gmuend/openmoji/master/color/svg/1F4CF.svg",
+    "author": "OpenMoji contributors",
+    "license": "CC BY-SA 4.0",
+    "modifications": "Rasterized and cropped transparent margins"
+  },
+  {
+    "name": "basket",
+    "url": "https://raw.githubusercontent.com/hfg-gmuend/openmoji/master/color/svg/1F9FA.svg",
+    "author": "OpenMoji contributors",
+    "license": "CC BY-SA 4.0",
+    "modifications": "Rasterized and cropped transparent margins"
+  }
+]

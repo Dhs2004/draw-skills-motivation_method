@@ -12,7 +12,7 @@
   {
     "name": "advantage",
     "latex": "\\hat A_{i,t}=\\hat A_i=\\frac{R_i-\\operatorname{mean}(R)}{\\operatorname{std}(R)}",
-    "x": 1136.19825,
+    "x": 956.1982499999999,
     "y": 169.390875,
     "width": 268.6035,
     "height": 45.218250000000005,
@@ -22,7 +22,7 @@
   {
     "name": "current-policy",
     "latex": "\\pi_\\theta",
-    "x": 1103.2079,
+    "x": 923.2079000000001,
     "y": 322.0512,
     "width": 26.5842,
     "height": 15.897599999999999,
@@ -32,7 +32,7 @@
   {
     "name": "objective",
     "latex": "\\widehat J(\\theta)=\\frac{\\sum_{i,t}m_{i,t}\\ell_{i,t}}{\\sum_{i,t}m_{i,t}},\\qquad\\ell_{i,t}=\\min\\!\\left(w_{i,t}\\hat A_i,\\operatorname{clip}(w_{i,t},1-\\epsilon_{\\rm low},1+\\epsilon_{\\rm high})\\hat A_i\\right)",
-    "x": 725.428,
+    "x": 632,
     "y": 448.7908,
     "width": 672.144,
     "height": 40.4184,

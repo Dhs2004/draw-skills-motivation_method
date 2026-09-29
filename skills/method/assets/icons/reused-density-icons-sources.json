@@ -1,0 +1,44 @@
+[
+  {
+    "name": "dice",
+    "url": "https://raw.githubusercontent.com/hfg-gmuend/openmoji/master/color/svg/1F3B2.svg",
+    "author": "OpenMoji contributors",
+    "license": "CC BY-SA 4.0",
+    "modifications": "Rasterized and cropped transparent margins"
+  },
+  {
+    "name": "gear",
+    "url": "https://raw.githubusercontent.com/hfg-gmuend/openmoji/master/color/svg/2699.svg",
+    "author": "OpenMoji contributors",
+    "license": "CC BY-SA 4.0",
+    "modifications": "Rasterized and cropped transparent margins"
+  },
+  {
+    "name": "shield",
+    "url": "https://raw.githubusercontent.com/hfg-gmuend/openmoji/master/color/svg/1F6E1.svg",
+    "author": "OpenMoji contributors",
+    "license": "CC BY-SA 4.0",
+    "modifications": "Rasterized and cropped transparent margins"
+  },
+  {
+    "name": "verified",
+    "url": "https://raw.githubusercontent.com/hfg-gmuend/openmoji/master/color/svg/2705.svg",
+    "author": "OpenMoji contributors",
+    "license": "CC BY-SA 4.0",
+    "modifications": "Rasterized and cropped transparent margins"
+  },
+  {
+    "name": "rejected",
+    "url": "https://raw.githubusercontent.com/hfg-gmuend/openmoji/master/color/svg/274C.svg",
+    "author": "OpenMoji contributors",
+    "license": "CC BY-SA 4.0",
+    "modifications": "Rasterized and cropped transparent margins"
+  },
+  {
+    "name": "abacus",
+    "url": "https://raw.githubusercontent.com/hfg-gmuend/openmoji/master/color/svg/1F9EE.svg",
+    "author": "OpenMoji contributors",
+    "license": "CC BY-SA 4.0",
+    "modifications": "Rasterized and cropped transparent margins"
+  }
+]

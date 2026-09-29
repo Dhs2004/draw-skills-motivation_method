@@ -1,0 +1,30 @@
+[
+  {
+    "name": "clock",
+    "url": "https://raw.githubusercontent.com/hfg-gmuend/openmoji/master/color/svg/23F1.svg",
+    "license": "CC BY-SA 4.0",
+    "author": "OpenMoji contributors",
+    "modifications": "Rasterized and cropped transparent margins"
+  },
+  {
+    "name": "lightning",
+    "url": "https://raw.githubusercontent.com/hfg-gmuend/openmoji/master/color/svg/26A1.svg",
+    "license": "CC BY-SA 4.0",
+    "author": "OpenMoji contributors",
+    "modifications": "Rasterized and cropped transparent margins"
+  },
+  {
+    "name": "link",
+    "url": "https://raw.githubusercontent.com/hfg-gmuend/openmoji/master/color/svg/1F517.svg",
+    "license": "CC BY-SA 4.0",
+    "author": "OpenMoji contributors",
+    "modifications": "Rasterized and cropped transparent margins"
+  },
+  {
+    "name": "compass",
+    "url": "https://raw.githubusercontent.com/hfg-gmuend/openmoji/master/color/svg/1F9ED.svg",
+    "license": "CC BY-SA 4.0",
+    "author": "OpenMoji contributors",
+    "modifications": "Rasterized and cropped transparent margins"
+  }
+]

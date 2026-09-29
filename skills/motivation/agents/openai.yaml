@@ -1,0 +1,4 @@
+interface:
+  display_name: "Motivation 学术手绘图"
+  short_description: "根据参考图制作紧凑、可编辑的卡通学术示意图并导出 PNG 与 PDF"
+  default_prompt: "使用 $motivation，根据我提供的参考图生成紧凑精致的学术 Excalidraw 图，并导出 PNG 和 PDF。"

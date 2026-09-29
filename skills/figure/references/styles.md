@@ -20,6 +20,8 @@
 
 [预览](../assets/examples/annular_pastel_radar_preview.png) · [PNG](../assets/examples/annular_pastel_radar_synthetic.png) · [PDF](../assets/examples/annular_pastel_radar_synthetic.pdf) · [SVG](../assets/examples/annular_pastel_radar_synthetic.svg)
 
+另有六种同级风格见 [雷达图设计变体](radar-design.md)，包括柔彩花环、宝石色弧环、青瓷双层环、极光渐变环、棱面彩环和极简彩带。
+
 六维雷达图使用同向、可比较的指标；浅色外环只标识任务。红色主线与低饱和基线配合，透明填充保持克制，图例放于下方。
 
 ## 灰度纹理双面板柱状图

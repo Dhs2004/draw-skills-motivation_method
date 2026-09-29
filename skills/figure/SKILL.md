@@ -40,3 +40,5 @@ python /path/to/figure/scripts/render_examples.py --out /path/to/replay --data /
 检查数据长度、概率范围、图例—系列对应、阈值所属轴、PDF 页数和输出像素尺寸；实际查看整图与 PDF，修正图例遮挡、标签裁切、双轴拥挤和柱顶数字冲突。自动检查不能代替视觉检查。输出到用户指定目录，不把结果写回参考图；结束时提供结果和 skill 路径。
 
 四种几何风格使用 [render_geometric_styles.py](scripts/render_geometric_styles.py) 生成，和其他样例同级管理。曲线到零平面的填充不是置信区间；3D 柱高的归一化分母与柱顶原始值需分别说明。
+
+需要更精致的彩色外环雷达图时，阅读 [雷达图设计变体](references/radar-design.md)，可用 [render_radar_gallery.py](scripts/render_radar_gallery.py) 基于同一份数据生成六种可比较的风格。保持所有系列、轴顺序和刻度一致，只调整视觉呈现。

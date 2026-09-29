@@ -121,7 +121,7 @@ git clone https://github.com/Dhs2004/draw-skills-motivation_method.git
 
 ## Figure 数据图示例
 
-以下七种风格均使用 retry 生成的**模拟数据示例**。前三种的随机种子为 `20260929`，后四种为 `20260930`。展示视觉风格，不代表真实实验结果。figure skill 使用标准科学绘图库，不沿用概念示意图的卡通字体或实体图标规则。
+以下十三种风格均使用 retry 生成的**模拟数据示例**。前三种的随机种子为 `20260929`，其余风格使用 `20260930` 生成的数据。展示视觉风格，不代表真实实验结果。figure skill 使用标准科学绘图库，不沿用概念示意图的卡通字体或实体图标规则。
 
 ### 青橙三联训练与效率曲线
 
@@ -146,6 +146,42 @@ git clone https://github.com/Dhs2004/draw-skills-motivation_method.git
 ![彩色外环雷达图（模拟数据）](skills/figure/assets/examples/annular_pastel_radar_preview.png)
 
 [高清 PNG](skills/figure/assets/examples/annular_pastel_radar_synthetic.png) · [PDF](skills/figure/assets/examples/annular_pastel_radar_synthetic.pdf) · [SVG](skills/figure/assets/examples/annular_pastel_radar_synthetic.svg)
+
+### 柔彩花环雷达图
+
+![柔彩花环雷达图（模拟数据）](skills/figure/assets/examples/annular_radar_pastel_bloom_preview.png)
+
+[高清 PNG](skills/figure/assets/examples/annular_radar_pastel_bloom.png) · [PDF](skills/figure/assets/examples/annular_radar_pastel_bloom.pdf) · [SVG](skills/figure/assets/examples/annular_radar_pastel_bloom.svg)
+
+### 宝石色弧环雷达图
+
+![宝石色弧环雷达图（模拟数据）](skills/figure/assets/examples/annular_radar_jewel_arc_preview.png)
+
+[高清 PNG](skills/figure/assets/examples/annular_radar_jewel_arc.png) · [PDF](skills/figure/assets/examples/annular_radar_jewel_arc.pdf) · [SVG](skills/figure/assets/examples/annular_radar_jewel_arc.svg)
+
+### 青瓷双层环雷达图
+
+![青瓷双层环雷达图（模拟数据）](skills/figure/assets/examples/annular_radar_porcelain_double_ring_preview.png)
+
+[高清 PNG](skills/figure/assets/examples/annular_radar_porcelain_double_ring.png) · [PDF](skills/figure/assets/examples/annular_radar_porcelain_double_ring.pdf) · [SVG](skills/figure/assets/examples/annular_radar_porcelain_double_ring.svg)
+
+### 极光渐变环雷达图
+
+![极光渐变环雷达图（模拟数据）](skills/figure/assets/examples/annular_radar_aurora_gradient_preview.png)
+
+[高清 PNG](skills/figure/assets/examples/annular_radar_aurora_gradient.png) · [PDF](skills/figure/assets/examples/annular_radar_aurora_gradient.pdf) · [SVG](skills/figure/assets/examples/annular_radar_aurora_gradient.svg)
+
+### 棱面彩环雷达图
+
+![棱面彩环雷达图（模拟数据）](skills/figure/assets/examples/annular_radar_faceted_spectrum_preview.png)
+
+[高清 PNG](skills/figure/assets/examples/annular_radar_faceted_spectrum.png) · [PDF](skills/figure/assets/examples/annular_radar_faceted_spectrum.pdf) · [SVG](skills/figure/assets/examples/annular_radar_faceted_spectrum.svg)
+
+### 极简彩带雷达图
+
+![极简彩带雷达图（模拟数据）](skills/figure/assets/examples/annular_radar_minimal_ribbon_preview.png)
+
+[高清 PNG](skills/figure/assets/examples/annular_radar_minimal_ribbon.png) · [PDF](skills/figure/assets/examples/annular_radar_minimal_ribbon.pdf) · [SVG](skills/figure/assets/examples/annular_radar_minimal_ribbon.svg)
 
 ### 灰度纹理双面板柱状图
 
@@ -183,6 +219,15 @@ python skills/figure/scripts/render_examples.py --out ./figure-output \
 ```bash
 python skills/figure/scripts/render_geometric_styles.py --out ./geometric-figures \
   --data skills/figure/assets/examples/geometric_styles_data.json
+```
+
+六种新增雷达图使用相同数据、轴顺序和 0–100 刻度，只改变彩环、网格、文字与线条设计。
+
+[六种雷达图对照总览](skills/figure/assets/examples/radar_gallery_overview.png) · [雷达图设计说明](skills/figure/references/radar-design.md) · [雷达数据](skills/figure/assets/examples/radar_data.json) · [绘图代码](skills/figure/scripts/render_radar_gallery.py)
+
+```bash
+python skills/figure/scripts/render_radar_gallery.py --out ./radar-gallery \
+  --data skills/figure/assets/examples/radar_data.json
 ```
 
 ## Excalidraw 运行与导出

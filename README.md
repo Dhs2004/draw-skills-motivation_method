@@ -147,41 +147,20 @@ git clone https://github.com/Dhs2004/draw-skills-motivation_method.git
 
 [高清 PNG](skills/figure/assets/examples/annular_pastel_radar_synthetic.png) · [PDF](skills/figure/assets/examples/annular_pastel_radar_synthetic.pdf) · [SVG](skills/figure/assets/examples/annular_pastel_radar_synthetic.svg)
 
-### 柔彩花环雷达图
+### 彩色外环雷达图变体
 
-![柔彩花环雷达图（模拟数据）](skills/figure/assets/examples/annular_radar_pastel_bloom_preview.png)
-
-[高清 PNG](skills/figure/assets/examples/annular_radar_pastel_bloom.png) · [PDF](skills/figure/assets/examples/annular_radar_pastel_bloom.pdf) · [SVG](skills/figure/assets/examples/annular_radar_pastel_bloom.svg)
-
-### 宝石色弧环雷达图
-
-![宝石色弧环雷达图（模拟数据）](skills/figure/assets/examples/annular_radar_jewel_arc_preview.png)
-
-[高清 PNG](skills/figure/assets/examples/annular_radar_jewel_arc.png) · [PDF](skills/figure/assets/examples/annular_radar_jewel_arc.pdf) · [SVG](skills/figure/assets/examples/annular_radar_jewel_arc.svg)
-
-### 青瓷双层环雷达图
-
-![青瓷双层环雷达图（模拟数据）](skills/figure/assets/examples/annular_radar_porcelain_double_ring_preview.png)
-
-[高清 PNG](skills/figure/assets/examples/annular_radar_porcelain_double_ring.png) · [PDF](skills/figure/assets/examples/annular_radar_porcelain_double_ring.pdf) · [SVG](skills/figure/assets/examples/annular_radar_porcelain_double_ring.svg)
-
-### 极光渐变环雷达图
-
-![极光渐变环雷达图（模拟数据）](skills/figure/assets/examples/annular_radar_aurora_gradient_preview.png)
-
-[高清 PNG](skills/figure/assets/examples/annular_radar_aurora_gradient.png) · [PDF](skills/figure/assets/examples/annular_radar_aurora_gradient.pdf) · [SVG](skills/figure/assets/examples/annular_radar_aurora_gradient.svg)
-
-### 棱面彩环雷达图
-
-![棱面彩环雷达图（模拟数据）](skills/figure/assets/examples/annular_radar_faceted_spectrum_preview.png)
-
-[高清 PNG](skills/figure/assets/examples/annular_radar_faceted_spectrum.png) · [PDF](skills/figure/assets/examples/annular_radar_faceted_spectrum.pdf) · [SVG](skills/figure/assets/examples/annular_radar_faceted_spectrum.svg)
-
-### 极简彩带雷达图
-
-![极简彩带雷达图（模拟数据）](skills/figure/assets/examples/annular_radar_minimal_ribbon_preview.png)
-
-[高清 PNG](skills/figure/assets/examples/annular_radar_minimal_ribbon.png) · [PDF](skills/figure/assets/examples/annular_radar_minimal_ribbon.pdf) · [SVG](skills/figure/assets/examples/annular_radar_minimal_ribbon.svg)
+<table>
+  <tr>
+    <td align="center" width="33%"><b>柔彩花环</b><br><a href="skills/figure/assets/examples/annular_radar_pastel_bloom.png"><img src="skills/figure/assets/examples/annular_radar_pastel_bloom_preview.png" alt="柔彩花环雷达图（模拟数据）" width="260"></a><br><a href="skills/figure/assets/examples/annular_radar_pastel_bloom.png">PNG</a> · <a href="skills/figure/assets/examples/annular_radar_pastel_bloom.pdf">PDF</a> · <a href="skills/figure/assets/examples/annular_radar_pastel_bloom.svg">SVG</a></td>
+    <td align="center" width="33%"><b>宝石色弧环</b><br><a href="skills/figure/assets/examples/annular_radar_jewel_arc.png"><img src="skills/figure/assets/examples/annular_radar_jewel_arc_preview.png" alt="宝石色弧环雷达图（模拟数据）" width="260"></a><br><a href="skills/figure/assets/examples/annular_radar_jewel_arc.png">PNG</a> · <a href="skills/figure/assets/examples/annular_radar_jewel_arc.pdf">PDF</a> · <a href="skills/figure/assets/examples/annular_radar_jewel_arc.svg">SVG</a></td>
+    <td align="center" width="33%"><b>青瓷双层环</b><br><a href="skills/figure/assets/examples/annular_radar_porcelain_double_ring.png"><img src="skills/figure/assets/examples/annular_radar_porcelain_double_ring_preview.png" alt="青瓷双层环雷达图（模拟数据）" width="260"></a><br><a href="skills/figure/assets/examples/annular_radar_porcelain_double_ring.png">PNG</a> · <a href="skills/figure/assets/examples/annular_radar_porcelain_double_ring.pdf">PDF</a> · <a href="skills/figure/assets/examples/annular_radar_porcelain_double_ring.svg">SVG</a></td>
+  </tr>
+  <tr>
+    <td align="center" width="33%"><b>极光渐变环</b><br><a href="skills/figure/assets/examples/annular_radar_aurora_gradient.png"><img src="skills/figure/assets/examples/annular_radar_aurora_gradient_preview.png" alt="极光渐变环雷达图（模拟数据）" width="260"></a><br><a href="skills/figure/assets/examples/annular_radar_aurora_gradient.png">PNG</a> · <a href="skills/figure/assets/examples/annular_radar_aurora_gradient.pdf">PDF</a> · <a href="skills/figure/assets/examples/annular_radar_aurora_gradient.svg">SVG</a></td>
+    <td align="center" width="33%"><b>棱面彩环</b><br><a href="skills/figure/assets/examples/annular_radar_faceted_spectrum.png"><img src="skills/figure/assets/examples/annular_radar_faceted_spectrum_preview.png" alt="棱面彩环雷达图（模拟数据）" width="260"></a><br><a href="skills/figure/assets/examples/annular_radar_faceted_spectrum.png">PNG</a> · <a href="skills/figure/assets/examples/annular_radar_faceted_spectrum.pdf">PDF</a> · <a href="skills/figure/assets/examples/annular_radar_faceted_spectrum.svg">SVG</a></td>
+    <td align="center" width="33%"><b>极简彩带</b><br><a href="skills/figure/assets/examples/annular_radar_minimal_ribbon.png"><img src="skills/figure/assets/examples/annular_radar_minimal_ribbon_preview.png" alt="极简彩带雷达图（模拟数据）" width="260"></a><br><a href="skills/figure/assets/examples/annular_radar_minimal_ribbon.png">PNG</a> · <a href="skills/figure/assets/examples/annular_radar_minimal_ribbon.pdf">PDF</a> · <a href="skills/figure/assets/examples/annular_radar_minimal_ribbon.svg">SVG</a></td>
+  </tr>
+</table>
 
 ### 灰度纹理双面板柱状图
 

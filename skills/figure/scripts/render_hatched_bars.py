@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Six compact multi-metric hatched bar examples. Synthetic data only.
+"""Three compact multi-metric hatched bar examples. Synthetic data only.
 Requires numpy, matplotlib, Pillow. --data replays the saved JSON.
 """
 import argparse,json,csv
@@ -10,8 +10,8 @@ matplotlib.use('Agg')
 import matplotlib.pyplot as plt
 from matplotlib.patches import Patch
 from PIL import Image,ImageDraw,ImageFont
-NAMES=['paired_metrics','grouped_tasks','four_metric_facets','continuous_blocks','horizontal_metrics','normalized_metrics']
-TITLES=['Paired metrics','Grouped tasks','Four-metric facets','Continuous blocks','Horizontal metrics','Baseline-normalized metrics']
+NAMES=['grouped_tasks','normalized_metrics','continuous_blocks']
+TITLES=['Grouped tasks','Baseline-normalized metrics','Continuous blocks']
 COLORS=['#eee9df','#d4cecb','#b6b1b6','#88858e'];HATCH=['///','\\\\','...','---']
 
 def data(seed):
@@ -49,36 +49,24 @@ def save(fig,out,name):
 
 def render(d,out):
  a=np.array(d['values']);methods=d['methods'];metrics=d['metrics'];tasks=d['tasks'];nm=len(methods);nt=len(tasks);means=a.mean(axis=0)
- fig,axs=figure(1,2,methods,(9.0,3.7))
- for k,ax in enumerate(axs.flat):
-  drawbars(ax,np.arange(nm),means[:,k],range(nm));ax.set_xticks(range(nm),methods);ax.set_ylabel(label(metrics[k]));ax.set_ylim(0,max(means[:,k])*1.22);ax.set_title('Mean across tasks',fontsize=10,loc='left',pad=10)
- save(fig,out,NAMES[0])
  fig,axs=figure(1,2,methods,(10.4,3.8))
  for k,ax in enumerate(axs.flat):
   for t in range(nt):drawbars(ax,t*(nm+.9)+np.arange(nm),a[t,:,k],range(nm),annotate=False)
   ax.set_xticks(np.arange(nt)*(nm+.9)+(nm-1)/2,tasks);ax.set_ylabel(label(metrics[k]));ax.set_ylim(0,max(a[:,:,k].flat)*1.15)
- save(fig,out,NAMES[1])
- fig,axs=figure(2,2,methods,(9.2,6.0))
- for k,ax in enumerate(axs.flat):
-  drawbars(ax,np.arange(nm),means[:,k],range(nm));ax.set_xticks(range(nm),methods);ax.set_ylabel(label(metrics[k]));ax.set_ylim(0,max(means[:,k])*1.23);ax.set_title(metrics[k]['name'],loc='left',fontsize=10,fontweight='bold')
- save(fig,out,NAMES[2])
+ save(fig,out,'grouped_tasks')
  fig,axs=figure(1,2,methods,(10.4,3.8))
  for k,ax in enumerate(axs.flat):
   for t in range(nt):
    drawbars(ax,t*nm+np.arange(nm),a[t,:,k],range(nm),annotate=False)
    if t:ax.axvline(t*nm-.5,color='#55515b',lw=.9,ls=':',zorder=4)
   ax.set_xticks(np.arange(nt)*nm+(nm-1)/2,tasks);ax.set_xlim(-.5,nt*nm-.5);ax.set_ylabel(label(metrics[k]));ax.set_ylim(0,max(a[:,:,k].flat)*1.15)
- save(fig,out,NAMES[3])
- fig,axs=figure(1,2,methods,(9.2,3.8))
- for k,ax in zip([2,3],axs.flat):
-  drawbars(ax,np.arange(nm),means[:,k],range(nm),horizontal=True);ax.set_yticks(range(nm),methods);ax.invert_yaxis();ax.set_xlabel(label(metrics[k]));ax.set_xlim(0,max(means[:,k])*1.26);ax.set_ylim(nm-.5,-.5);ax.grid(False);ax.grid(axis='x',color='#dce0e3',lw=.6,ls=':')
- save(fig,out,NAMES[4])
+ save(fig,out,'continuous_blocks')
  fig,axs=figure(1,2,methods,(10.4,3.8))
  for indices,ax in zip([[0,1],[2,3]],axs.flat):
   for group,k in enumerate(indices):
    vals=means[:,k]/means[0,k]*100;drawbars(ax,group*(nm+1)+np.arange(nm),vals,range(nm),annotate=True)
   ax.set_xticks(np.arange(2)*(nm+1)+(nm-1)/2,[metrics[k]['name']+(' ↑' if metrics[k]['direction']=='higher' else ' ↓') for k in indices]);ax.axhline(100,color='#514b56',ls='--',lw=.9,zorder=5);ax.set_ylabel('Relative to Base (%)');ax.set_ylim(0,max((means[:,k]/means[0,k]*100).max() for k in indices)*1.22)
- save(fig,out,NAMES[5])
+ save(fig,out,'normalized_metrics')
 
 def main():
  ap=argparse.ArgumentParser(description=__doc__);ap.add_argument('--out',required=True,type=Path);ap.add_argument('--data',type=Path);ap.add_argument('--seed',type=int,default=20261001);args=ap.parse_args();args.out.mkdir(parents=True,exist_ok=True)
@@ -93,8 +81,8 @@ def main():
    for m,method in enumerate(d['methods']):
     for k,metric in enumerate(d['metrics']):w.writerow([task,method,metric['name'],metric['unit'],a[t,m,k]])
  render(d,args.out)
- sheet=Image.new('RGB',(1800,1020),'#f0f1f3');draw=ImageDraw.Draw(sheet);font=ImageFont.truetype('DejaVuSans.ttf',20)
+ sheet=Image.new('RGB',(1800,510),'#f0f1f3');draw=ImageDraw.Draw(sheet);font=ImageFont.truetype('DejaVuSans.ttf',20)
  for i,(name,title) in enumerate(zip(NAMES,TITLES)):
   x=i%3*600;y=i//3*510;draw.rounded_rectangle((x+10,y+10,x+590,y+500),radius=12,fill='white');im=Image.open(args.out/('hatched_bar_'+name+'_preview.png')).convert('RGB');im.thumbnail((566,416));sheet.paste(im,(x+(600-im.width)//2,y+25+(416-im.height)//2));draw.text((x+300,y+465),title,font=font,anchor='mm',fill='#41404a')
- sheet.save(args.out/'hatched_bar_gallery_overview.png');print('Rendered six touching-bar multi-metric examples.')
+ sheet.save(args.out/'hatched_bar_gallery_overview.png');print('Rendered three touching-bar multi-metric examples.')
 if __name__=='__main__':main()

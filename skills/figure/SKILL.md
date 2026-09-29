@@ -43,4 +43,4 @@ python /path/to/figure/scripts/render_examples.py --out /path/to/replay --data /
 
 需要更精致的彩色外环雷达图时，阅读 [雷达图设计变体](references/radar-design.md)，可用 [render_radar_gallery.py](scripts/render_radar_gallery.py) 基于同一份数据生成六种可比较的风格。保持所有系列、轴顺序和刻度一致，只调整视觉呈现。
 
-绘制灰度纹理柱状图时，阅读 [多指标紧密柱状图](references/hatched-bars.md)：默认组内柱子相接；要求全无空隙时组间也相接。多指标按单位分面或明确归一化，支持共享图例和两行三列样例展示。
+绘制灰度纹理柱状图时，阅读 [多指标紧密柱状图](references/hatched-bars.md)：默认组内柱子相接；要求全无空隙时组间也相接。多指标按单位分面或明确归一化，支持共享图例和一行三列样例展示。

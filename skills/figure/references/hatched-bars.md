@@ -1,14 +1,11 @@
 # 灰度纹理多指标柱状图
 
-此类图统一展示六张样例，在 README 中按两行三列排列，不另分“原版”和“变体”。支持多个指标、多任务、多方法对比。所有示例使用同一份模拟数据，四种方法、三个任务、四个指标（成功率、F1、延迟、成本）。
+此类图统一展示三张样例，在 README 中按一行三列排列，不另分“原版”和“变体”。支持多个指标、多任务、多方法对比。所有示例使用同一份模拟数据，四种方法、三个任务、四个指标（成功率、F1、延迟、成本）。
 
 | 文件后缀 | 名称 | 用途 |
 |---|---|---|
-| paired_metrics | 双指标紧密对比 | 两个指标各占一面板；展示跨任务均值 |
 | grouped_tasks | 多任务分组对比 | 每个任务是一组，组内方法柱相接，组间保留小间距 |
-| four_metric_facets | 多指标分面对比 | 四指标分面，单位与优化方向分别标注 |
 | continuous_blocks | 全连续纹理柱群 | 柱间、组间均无空隙，用细分隔线和任务标签划组 |
-| horizontal_metrics | 横向多指标对比 | 柱条纵向紧密相接，长指标名放横轴 |
 | normalized_metrics | 归一化指标对比 | 各指标分别除以 Base 的跨任务均值并乘 100，再分组对比 |
 
 [总览](../assets/examples/hatched_bar_gallery_overview.png) · [数据](../assets/examples/hatched_bar_data.json) · [CSV](../assets/examples/hatched_bar_data.csv)

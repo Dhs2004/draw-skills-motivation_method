@@ -26,7 +26,7 @@
 
 ## 灰度纹理双面板柱状图
 
-此类图包含六张同级样例，覆盖多指标、多任务、横向和归一化对比。采用组内相接柱体，另有所有柱体连续无空隙的布局。见 [设计与生成说明](hatched-bars.md) 和 [六图总览](../assets/examples/hatched_bar_gallery_overview.png)。
+此类图包含三张同级样例：多任务分组对比、归一化指标对比和全连续纹理柱群。采用组内相接柱体，另有所有柱体连续无空隙的布局。见 [设计与生成说明](hatched-bars.md) 和 [三图总览](../assets/examples/hatched_bar_gallery_overview.png)。
 
 ## 透视归一化三维柱状图
 

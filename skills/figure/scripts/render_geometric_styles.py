@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Four geometric academic plot styles, using explicit synthetic data.
+"""Two geometric academic plot styles, using explicit synthetic data.
 Requires numpy and matplotlib; --data replays the bundled JSON.
 """
 
@@ -15,25 +15,17 @@ matplotlib.use('Agg')
 
 import matplotlib.pyplot as plt
 
-from matplotlib.collections import PolyCollection
 
 from matplotlib.ticker import PercentFormatter,FuncFormatter
 
 BLUE='#1585d4';RED='#f33b3e';ORANGE='#ff8a22';GREEN='#569a68'
-NAMES={3: 'annular_pastel_radar', 4: 'paired_grayscale_hatched_bars', 6: 'perspective_normalized_3d_bars', 7: 'perspective_3d_ribbon_dynamics'}
+NAMES={3: 'annular_pastel_radar', 4: 'paired_grayscale_hatched_bars'}
 
 def make_data(seed):
- r=np.random.default_rng(seed);x=np.arange(1,151)
- def noisy(y,scale):
-  z=r.normal(0,scale,len(x));z=np.convolve(np.pad(z,(2,2),mode='edge'),np.ones(5)/5,'valid');return np.asarray(y)+z
- def rise(low,high,rate,delay=0):return low+(high-low)*(1-np.exp(-np.maximum(x-delay,0)/rate))
+ r=np.random.default_rng(seed)
  radar=np.clip(r.normal(62,18,(7,6)),15,96);radar[0]=r.uniform(82,96,6)
  bars1=r.uniform(43,87,(2,4))
- # Keep the original example RNG stream after removing its other bar demo.
- r.uniform(62,91,(2,4));r.uniform(16,27,2)
- sensitivity=r.uniform(45,96,(4,4));sensitivity[:,2]+=4;sensitivity=np.minimum(sensitivity,98)
- ribbons=np.array([noisy(rise(.04,.94,58),.035),noisy(rise(.02,.64,92),.028),noisy(rise(.01,.36,100,22),.02)])
- return dict(synthetic=True,seed=seed,steps=x,radar=radar,bars1=bars1,sensitivity=sensitivity,ribbons=np.clip(ribbons,0,1))
+ return dict(synthetic=True,seed=seed,radar=radar,bars1=bars1)
 
 def serial(x):
  if isinstance(x,np.ndarray):return x.tolist()
@@ -74,32 +66,11 @@ def bars(d,out,num,key):
   ax.text(.025,.97,('Task '+chr(65+j)) if num==4 else ('Backbone '+chr(65+j)),transform=ax.transAxes,ha='left',va='top',fontsize=8,bbox=dict(boxstyle='square,pad=.13',facecolor='#e1e5e6',edgecolor='#777777',lw=.6))
  save(fig,out,num)
 
-def bars3d(d,out):
- fig=plt.figure(figsize=(7.6,5.25));ax=fig.add_subplot(111,projection='3d');fig.subplots_adjust(left=.04,right=.91,bottom=.11,top=.96)
- values=np.array(d['sensitivity']);heights=values/values.max(axis=1,keepdims=True)
- for j,c in enumerate(['#cbcbb9','#aac0a0','#6186a6','#c45a58']):
-  for k in range(4):
-   h=heights[j,k];ax.bar3d(k*1.15,j*1.25,0,.32,.32,h,color=c,edgecolor='#303030',linewidth=.55,shade=True);ax.text(k*1.15+.16,j*1.25+.16,h+.035,f'{values[j,k]:.1f}',ha='center',va='bottom',fontsize=7,color='#9c2828',zorder=100,bbox=dict(facecolor='white',edgecolor='none',alpha=.80,pad=.4))
- ax.set_xticks(np.arange(4)*1.15+.16,['0','5','10','20']);ax.set_yticks(np.arange(4)*1.25+.16,['Metric A','Metric B','Metric C','Metric D']);ax.tick_params(axis='y',pad=1,labelsize=8)
- ax.set_xlabel('Parameter setting',labelpad=7);ax.set_zlabel('Within-metric normalized score',labelpad=9,fontsize=8);ax.set_zlim(0,1.2);ax.set_zticks([.25,.5,.75,1],['0.25×','0.50×','0.75×','1.00×']);ax.view_init(elev=37,azim=-55)
- ax.set_box_aspect((1.25,1.1,.75))
- for axis in [ax.xaxis,ax.yaxis,ax.zaxis]:axis.pane.fill=False
- save(fig,out,6)
-
-def ribbons3d(d,out):
- fig=plt.figure(figsize=(7.5,4.8));ax=fig.add_subplot(111,projection='3d');fig.subplots_adjust(left=.03,right=.93,bottom=.17,top=.98)
- x=np.array(d['steps']);colors=['#5cb5cc','#76b784','#cb864c']
- for j,(line,c) in enumerate(zip(d['ribbons'],colors)):
-  verts=[(x[0],0),*zip(x,line),(x[-1],0)];poly=PolyCollection([verts],facecolors=[c],alpha=.20,edgecolors='none');ax.add_collection3d(poly,zs=j,zdir='y');ax.plot(x,np.full(len(x),j),line,color=c,lw=1.15)
- ax.set(xlim=(1,150),ylim=(-.15,2.15),zlim=(0,1));ax.set_xlabel('Training step',labelpad=7);ax.set_zlabel('Ratio',labelpad=5)
- ax.set_yticks([0,1,2],['Coverage','Freshness','Reweighting']);ax.tick_params(axis='y',labelsize=8,pad=9);ax.set_xticks([0,50,100,150]);ax.set_box_aspect((1.8,.9,1));ax.view_init(elev=24,azim=-57)
- for axis in [ax.xaxis,ax.yaxis,ax.zaxis]:axis.pane.fill=False
- save(fig,out,7)
-
 def main():
  ap=argparse.ArgumentParser(description=__doc__);ap.add_argument('--out',required=True,type=Path);ap.add_argument('--seed',type=int,default=20260930);ap.add_argument('--data',type=Path);args=ap.parse_args();args.out.mkdir(parents=True,exist_ok=True)
  d=json.loads(args.data.read_text()) if args.data else make_data(args.seed)
  if d.get('synthetic') is not True:raise ValueError('Only synthetic example data supported by this renderer.')
+ d={k:v for k,v in d.items() if k in ['synthetic','seed','radar','bars1']}
  (args.out/'geometric_styles_data.json').write_text(json.dumps(d,default=serial,indent=2))
  # Long-format export includes every raw numerical array with unambiguous indices.
  rows=[]
@@ -110,7 +81,7 @@ def main():
  for k,v in d.items():
   if k not in ['synthetic','seed']:flatten(v,k)
  with (args.out/'geometric_styles_values.csv').open('w',newline='') as f:w=csv.writer(f);w.writerow(['array','zero_based_index','value']);w.writerows(rows)
- style();radar(d,args.out);bars(d,args.out,4,'bars1');bars3d(d,args.out);ribbons3d(d,args.out)
- print('Rendered 4 geometric figure styles to',args.out)
+ style();radar(d,args.out);bars(d,args.out,4,'bars1')
+ print('Rendered 2 geometric figure styles to',args.out)
 
 if __name__=='__main__':main()

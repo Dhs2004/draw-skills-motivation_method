@@ -28,19 +28,9 @@
 
 此类图包含三张同级样例：多任务分组对比、归一化指标对比和全连续纹理柱群。采用组内相接柱体，另有所有柱体连续无空隙的布局。见 [设计与生成说明](hatched-bars.md) 和 [三图总览](../assets/examples/hatched_bar_gallery_overview.png)。
 
-## 透视归一化三维柱状图
+## 两种几何风格的生成
 
-此类图采用九种清晰的轴测／斜平行投影视角，按三行三列展示。统一数据、柱高定义与指标顺序，调整柱体比例、排距和面明暗；柱顶原值与归一化高度分别说明。见 [九种视角设计](3d-bar-design.md) 和 [总览](../assets/examples/normalized_3d_bar_gallery_overview.png)。
-
-## 分层半透明三维训练曲线
-
-[预览](../assets/examples/perspective_3d_ribbon_dynamics_preview.png) · [PNG](../assets/examples/perspective_3d_ribbon_dynamics_synthetic.png) · [PDF](../assets/examples/perspective_3d_ribbon_dynamics_synthetic.pdf) · [SVG](../assets/examples/perspective_3d_ribbon_dynamics_synthetic.svg)
-
-训练曲线沿类别轴分层，浅色透明立面落到零平面；它不是误差区间。缩短类别标签并调整投影间距，避免与训练步数末端刻度挤在一起。
-
-## 四种几何风格的生成
-
-上述四种风格参考 DEPPO 论文原 Figure 3、4、6、7 的视觉形式；示例全为合成数据，现按图表风格命名，不表示原论文结果。
+上述两种风格参考 DEPPO 论文原 Figure 3、4 的视觉形式；示例全为合成数据，现按图表风格命名，不表示原论文结果。
 
 [模拟数据](../assets/examples/geometric_styles_data.json) · [长表 CSV](../assets/examples/geometric_styles_values.csv)
 
@@ -48,4 +38,4 @@
 python /path/to/figure/scripts/render_geometric_styles.py --out /path/to/output --data /path/to/figure/assets/examples/geometric_styles_data.json
 ```
 
-固定随机种子为 20260930，输出四种风格的 PNG、PDF、SVG、预览与数据。运行不生成其他 DEPPO 实验图。
+固定随机种子为 20260930，输出两种风格的 PNG、PDF、SVG、预览与数据。运行不生成其他 DEPPO 实验图。

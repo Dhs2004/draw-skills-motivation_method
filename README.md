@@ -170,36 +170,6 @@ git clone https://github.com/Dhs2004/draw-skills-motivation_method.git
 
 [设计规则](skills/figure/references/hatched-bars.md) · [绘图代码](skills/figure/scripts/render_hatched_bars.py) · [数据 JSON](skills/figure/assets/examples/hatched_bar_data.json) · [CSV](skills/figure/assets/examples/hatched_bar_data.csv)
 
-### 透视归一化三维柱状图
-
-九张图使用同一份数据，通过轴测／斜平行投影改善前后排遮挡。柱高为指标内归一化值，柱顶数字为原始分数。
-
-<table>
-  <tr>
-    <td align="center" width="33%"><b>均衡轴测</b><br><a href="skills/figure/assets/examples/normalized_3d_bar_balanced_isometric.png"><img src="skills/figure/assets/examples/normalized_3d_bar_balanced_isometric_preview.png" alt="均衡轴测（模拟数据）" width="260"></a><br><a href="skills/figure/assets/examples/normalized_3d_bar_balanced_isometric.png">PNG</a> · <a href="skills/figure/assets/examples/normalized_3d_bar_balanced_isometric.pdf">PDF</a> · <a href="skills/figure/assets/examples/normalized_3d_bar_balanced_isometric.svg">SVG</a></td>
-    <td align="center" width="33%"><b>正面斜投影</b><br><a href="skills/figure/assets/examples/normalized_3d_bar_frontal_oblique.png"><img src="skills/figure/assets/examples/normalized_3d_bar_frontal_oblique_preview.png" alt="正面斜投影（模拟数据）" width="260"></a><br><a href="skills/figure/assets/examples/normalized_3d_bar_frontal_oblique.png">PNG</a> · <a href="skills/figure/assets/examples/normalized_3d_bar_frontal_oblique.pdf">PDF</a> · <a href="skills/figure/assets/examples/normalized_3d_bar_frontal_oblique.svg">SVG</a></td>
-    <td align="center" width="33%"><b>高位网格</b><br><a href="skills/figure/assets/examples/normalized_3d_bar_elevated_grid.png"><img src="skills/figure/assets/examples/normalized_3d_bar_elevated_grid_preview.png" alt="高位网格（模拟数据）" width="260"></a><br><a href="skills/figure/assets/examples/normalized_3d_bar_elevated_grid.png">PNG</a> · <a href="skills/figure/assets/examples/normalized_3d_bar_elevated_grid.pdf">PDF</a> · <a href="skills/figure/assets/examples/normalized_3d_bar_elevated_grid.svg">SVG</a></td>
-  </tr>
-  <tr>
-    <td align="center" width="33%"><b>建筑式层列</b><br><a href="skills/figure/assets/examples/normalized_3d_bar_architectural.png"><img src="skills/figure/assets/examples/normalized_3d_bar_architectural_preview.png" alt="建筑式层列（模拟数据）" width="260"></a><br><a href="skills/figure/assets/examples/normalized_3d_bar_architectural.png">PNG</a> · <a href="skills/figure/assets/examples/normalized_3d_bar_architectural.pdf">PDF</a> · <a href="skills/figure/assets/examples/normalized_3d_bar_architectural.svg">SVG</a></td>
-    <td align="center" width="33%"><b>宽幅轴测</b><br><a href="skills/figure/assets/examples/normalized_3d_bar_wide_isometric.png"><img src="skills/figure/assets/examples/normalized_3d_bar_wide_isometric_preview.png" alt="宽幅轴测（模拟数据）" width="260"></a><br><a href="skills/figure/assets/examples/normalized_3d_bar_wide_isometric.png">PNG</a> · <a href="skills/figure/assets/examples/normalized_3d_bar_wide_isometric.pdf">PDF</a> · <a href="skills/figure/assets/examples/normalized_3d_bar_wide_isometric.svg">SVG</a></td>
-    <td align="center" width="33%"><b>阶梯分层</b><br><a href="skills/figure/assets/examples/normalized_3d_bar_terraced_rows.png"><img src="skills/figure/assets/examples/normalized_3d_bar_terraced_rows_preview.png" alt="阶梯分层（模拟数据）" width="260"></a><br><a href="skills/figure/assets/examples/normalized_3d_bar_terraced_rows.png">PNG</a> · <a href="skills/figure/assets/examples/normalized_3d_bar_terraced_rows.pdf">PDF</a> · <a href="skills/figure/assets/examples/normalized_3d_bar_terraced_rows.svg">SVG</a></td>
-  </tr>
-  <tr>
-    <td align="center" width="33%"><b>紧凑平行投影</b><br><a href="skills/figure/assets/examples/normalized_3d_bar_compact_parallel.png"><img src="skills/figure/assets/examples/normalized_3d_bar_compact_parallel_preview.png" alt="紧凑平行投影（模拟数据）" width="260"></a><br><a href="skills/figure/assets/examples/normalized_3d_bar_compact_parallel.png">PNG</a> · <a href="skills/figure/assets/examples/normalized_3d_bar_compact_parallel.pdf">PDF</a> · <a href="skills/figure/assets/examples/normalized_3d_bar_compact_parallel.svg">SVG</a></td>
-    <td align="center" width="33%"><b>青瓷轴测</b><br><a href="skills/figure/assets/examples/normalized_3d_bar_porcelain_perspective.png"><img src="skills/figure/assets/examples/normalized_3d_bar_porcelain_perspective_preview.png" alt="青瓷轴测（模拟数据）" width="260"></a><br><a href="skills/figure/assets/examples/normalized_3d_bar_porcelain_perspective.png">PNG</a> · <a href="skills/figure/assets/examples/normalized_3d_bar_porcelain_perspective.pdf">PDF</a> · <a href="skills/figure/assets/examples/normalized_3d_bar_porcelain_perspective.svg">SVG</a></td>
-    <td align="center" width="33%"><b>石板铜色</b><br><a href="skills/figure/assets/examples/normalized_3d_bar_slate_copper.png"><img src="skills/figure/assets/examples/normalized_3d_bar_slate_copper_preview.png" alt="石板铜色（模拟数据）" width="260"></a><br><a href="skills/figure/assets/examples/normalized_3d_bar_slate_copper.png">PNG</a> · <a href="skills/figure/assets/examples/normalized_3d_bar_slate_copper.pdf">PDF</a> · <a href="skills/figure/assets/examples/normalized_3d_bar_slate_copper.svg">SVG</a></td>
-  </tr>
-</table>
-
-[九图对照](skills/figure/assets/examples/normalized_3d_bar_gallery_overview.png) · [设计规则](skills/figure/references/3d-bar-design.md) · [绘图代码](skills/figure/scripts/render_3d_bar_gallery.py) · [数据](skills/figure/assets/examples/normalized_3d_bar_data.csv)
-
-### 分层半透明三维训练曲线
-
-![分层半透明三维训练曲线（模拟数据）](skills/figure/assets/examples/perspective_3d_ribbon_dynamics_preview.png)
-
-[高清 PNG](skills/figure/assets/examples/perspective_3d_ribbon_dynamics_synthetic.png) · [PDF](skills/figure/assets/examples/perspective_3d_ribbon_dynamics_synthetic.pdf) · [SVG](skills/figure/assets/examples/perspective_3d_ribbon_dynamics_synthetic.svg)
-
 [Figure skill](skills/figure/SKILL.md) · [风格说明](skills/figure/references/styles.md) · [绘图代码](skills/figure/scripts/render_examples.py) · [模拟数据 JSON](skills/figure/assets/examples/synthetic_data.json) · [CSV 数据](skills/figure/assets/examples/data)
 
 调用示例：

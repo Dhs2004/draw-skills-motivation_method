@@ -30,9 +30,7 @@
 
 ## 透视归一化三维柱状图
 
-[预览](../assets/examples/perspective_normalized_3d_bars_preview.png) · [PNG](../assets/examples/perspective_normalized_3d_bars_synthetic.png) · [PDF](../assets/examples/perspective_normalized_3d_bars_synthetic.pdf) · [SVG](../assets/examples/perspective_normalized_3d_bars_synthetic.svg)
-
-三维分组柱以颜色区分指标，缩窄柱宽并提高观察仰角，避免遮住柱顶数值。本示例以各指标的最大值归一化柱高，柱顶显示原始分数；真实数据需明确归一化分母。标注绘制层级应保证完整可见。
+此类图采用九种清晰的轴测／斜平行投影视角，按三行三列展示。统一数据、柱高定义与指标顺序，调整柱体比例、排距和面明暗；柱顶原值与归一化高度分别说明。见 [九种视角设计](3d-bar-design.md) 和 [总览](../assets/examples/normalized_3d_bar_gallery_overview.png)。
 
 ## 分层半透明三维训练曲线
 

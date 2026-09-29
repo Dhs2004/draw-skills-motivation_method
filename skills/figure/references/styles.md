@@ -1,4 +1,4 @@
-# 三种可复用风格
+# 学术数据图风格
 
 本页描述视觉规则。所附示例全部使用模拟数据，不代表任何真实方法的性能。
 
@@ -16,4 +16,38 @@
 
 推荐从对应绘图函数修改：`plot_trip`、`plot_multi`、`plot_bars`。保留输入—处理—绘图之间的分离；新增风格时按参考调整函数，不强改不相关样例。
 
-参考 DEPPO 的雷达图、3D 图或训练／消融曲线时，转到 [DEPPO 实验图风格](deppo-experiments.md)。
+## 彩色外环雷达图
+
+[预览](../assets/examples/annular_pastel_radar_preview.png) · [PNG](../assets/examples/annular_pastel_radar_synthetic.png) · [PDF](../assets/examples/annular_pastel_radar_synthetic.pdf) · [SVG](../assets/examples/annular_pastel_radar_synthetic.svg)
+
+六维雷达图使用同向、可比较的指标；浅色外环只标识任务。红色主线与低饱和基线配合，透明填充保持克制，图例放于下方。
+
+## 灰度纹理双面板柱状图
+
+[预览](../assets/examples/paired_grayscale_hatched_bars_preview.png) · [PNG](../assets/examples/paired_grayscale_hatched_bars_synthetic.png) · [PDF](../assets/examples/paired_grayscale_hatched_bars_synthetic.pdf) · [SVG](../assets/examples/paired_grayscale_hatched_bars_synthetic.svg)
+
+两面板灰度／米色柱状图，用纹理区分方法；柱形从零开始，顶部标注原值，任务标签放左上。控制斜排类别标签的长度。
+
+## 透视归一化三维柱状图
+
+[预览](../assets/examples/perspective_normalized_3d_bars_preview.png) · [PNG](../assets/examples/perspective_normalized_3d_bars_synthetic.png) · [PDF](../assets/examples/perspective_normalized_3d_bars_synthetic.pdf) · [SVG](../assets/examples/perspective_normalized_3d_bars_synthetic.svg)
+
+三维分组柱以颜色区分指标，缩窄柱宽并提高观察仰角，避免遮住柱顶数值。本示例以各指标的最大值归一化柱高，柱顶显示原始分数；真实数据需明确归一化分母。标注绘制层级应保证完整可见。
+
+## 分层半透明三维训练曲线
+
+[预览](../assets/examples/perspective_3d_ribbon_dynamics_preview.png) · [PNG](../assets/examples/perspective_3d_ribbon_dynamics_synthetic.png) · [PDF](../assets/examples/perspective_3d_ribbon_dynamics_synthetic.pdf) · [SVG](../assets/examples/perspective_3d_ribbon_dynamics_synthetic.svg)
+
+训练曲线沿类别轴分层，浅色透明立面落到零平面；它不是误差区间。缩短类别标签并调整投影间距，避免与训练步数末端刻度挤在一起。
+
+## 四种几何风格的生成
+
+上述四种风格参考 DEPPO 论文原 Figure 3、4、6、7 的视觉形式；示例全为合成数据，现按图表风格命名，不表示原论文结果。
+
+[模拟数据](../assets/examples/geometric_styles_data.json) · [长表 CSV](../assets/examples/geometric_styles_values.csv)
+
+```bash
+python /path/to/figure/scripts/render_geometric_styles.py --out /path/to/output --data /path/to/figure/assets/examples/geometric_styles_data.json
+```
+
+固定随机种子为 20260930，输出四种风格的 PNG、PDF、SVG、预览与数据。运行不生成其他 DEPPO 实验图。

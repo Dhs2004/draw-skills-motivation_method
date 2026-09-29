@@ -121,7 +121,7 @@ git clone https://github.com/Dhs2004/draw-skills-motivation_method.git
 
 ## Figure 数据图示例
 
-以下三张参考图均为 retry 生成的**模拟数据示例**，使用固定随机种子 `20260929`。展示视觉风格，不代表真实实验结果。figure skill 使用标准科学绘图库，不沿用概念示意图的卡通字体或实体图标规则。
+以下七种风格均使用 retry 生成的**模拟数据示例**。前三种的随机种子为 `20260929`，后四种为 `20260930`。展示视觉风格，不代表真实实验结果。figure skill 使用标准科学绘图库，不沿用概念示意图的卡通字体或实体图标规则。
 
 ### 青橙三联训练与效率曲线
 
@@ -141,6 +141,30 @@ git clone https://github.com/Dhs2004/draw-skills-motivation_method.git
 
 [高清 PNG](skills/figure/assets/examples/grouped_bar_blue_palette_hatched_baseline_synthetic.png) · [PDF](skills/figure/assets/examples/grouped_bar_blue_palette_hatched_baseline_synthetic.pdf) · [SVG](skills/figure/assets/examples/grouped_bar_blue_palette_hatched_baseline_synthetic.svg)
 
+### 彩色外环雷达图
+
+![彩色外环雷达图（模拟数据）](skills/figure/assets/examples/annular_pastel_radar_preview.png)
+
+[高清 PNG](skills/figure/assets/examples/annular_pastel_radar_synthetic.png) · [PDF](skills/figure/assets/examples/annular_pastel_radar_synthetic.pdf) · [SVG](skills/figure/assets/examples/annular_pastel_radar_synthetic.svg)
+
+### 灰度纹理双面板柱状图
+
+![灰度纹理双面板柱状图（模拟数据）](skills/figure/assets/examples/paired_grayscale_hatched_bars_preview.png)
+
+[高清 PNG](skills/figure/assets/examples/paired_grayscale_hatched_bars_synthetic.png) · [PDF](skills/figure/assets/examples/paired_grayscale_hatched_bars_synthetic.pdf) · [SVG](skills/figure/assets/examples/paired_grayscale_hatched_bars_synthetic.svg)
+
+### 透视归一化三维柱状图
+
+![透视归一化三维柱状图（模拟数据）](skills/figure/assets/examples/perspective_normalized_3d_bars_preview.png)
+
+[高清 PNG](skills/figure/assets/examples/perspective_normalized_3d_bars_synthetic.png) · [PDF](skills/figure/assets/examples/perspective_normalized_3d_bars_synthetic.pdf) · [SVG](skills/figure/assets/examples/perspective_normalized_3d_bars_synthetic.svg)
+
+### 分层半透明三维训练曲线
+
+![分层半透明三维训练曲线（模拟数据）](skills/figure/assets/examples/perspective_3d_ribbon_dynamics_preview.png)
+
+[高清 PNG](skills/figure/assets/examples/perspective_3d_ribbon_dynamics_synthetic.png) · [PDF](skills/figure/assets/examples/perspective_3d_ribbon_dynamics_synthetic.pdf) · [SVG](skills/figure/assets/examples/perspective_3d_ribbon_dynamics_synthetic.svg)
+
 [Figure skill](skills/figure/SKILL.md) · [风格说明](skills/figure/references/styles.md) · [绘图代码](skills/figure/scripts/render_examples.py) · [模拟数据 JSON](skills/figure/assets/examples/synthetic_data.json) · [CSV 数据](skills/figure/assets/examples/data)
 
 调用示例：
@@ -154,20 +178,12 @@ python skills/figure/scripts/render_examples.py --out ./figure-output \
   --data skills/figure/assets/examples/synthetic_data.json
 ```
 
-## DEPPO 实验图风格
-
-参考 DEPPO 论文 **Figure 3–14** 的实验图形式，使用固定种子 `20260930` 重新生成 **12 张模拟数据样例**：彩色外环雷达图、灰度纹理柱状图、3D 参数敏感性、3D 动态填充图、训练曲线和多面板消融图。所有样例均标注 `SYNTHETIC DATA`，不代表论文实验结果。
-
-![DEPPO 实验图模拟样例总览](skills/figure/assets/examples/deppo/overview.png)
-
-[Figure skill](skills/figure/SKILL.md) · [12 种样例与风格说明](skills/figure/references/deppo-experiments.md) · [全部 PNG / PDF / SVG](skills/figure/assets/examples/deppo) · [绘图代码](skills/figure/scripts/render_deppo_examples.py) · [模拟数据 JSON](skills/figure/assets/examples/deppo/synthetic_data.json) · [CSV](skills/figure/assets/examples/deppo/synthetic_values.csv)
+雷达图、纹理双面板柱状图及两种三维图使用 [几何风格脚本](skills/figure/scripts/render_geometric_styles.py) 与 [配套模拟数据](skills/figure/assets/examples/geometric_styles_data.json)：
 
 ```bash
-python skills/figure/scripts/render_deppo_examples.py --out ./deppo-figures \
-  --data skills/figure/assets/examples/deppo/synthetic_data.json
+python skills/figure/scripts/render_geometric_styles.py --out ./geometric-figures \
+  --data skills/figure/assets/examples/geometric_styles_data.json
 ```
-
-此处复用的是实验图表的视觉风格。3D 柱图明确记录归一化规则；曲线到零平面的填充不表示置信区间。
 
 ## Excalidraw 运行与导出
 

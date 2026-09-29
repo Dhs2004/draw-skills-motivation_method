@@ -1,12 +1,13 @@
 # Academic Figure Skills
 
-三套学术绘图 Codex skills：motivation / method 生成可编辑 **Excalidraw** 示意图；figure 使用科学绘图库生成数据图。均支持高清 **PNG、PDF、SVG**。
+四套学术绘图 Codex skills：motivation / method 生成可编辑 **Excalidraw** 示意图；figure 使用科学绘图库生成数据图。均支持高清 **PNG、PDF、SVG**。
 
 | Skill | 适用任务 | 布局偏好 |
 |---|---|---|
 | [motivation](skills/motivation/SKILL.md) | 动机、局限、设计理由与方法对比 | 紧凑对比，可纵向组织 |
 | [method](skills/method/SKILL.md) | 方法架构、机制、数据流与训练流程 | 横向一体化、高信息密度，默认无明显步骤编号 |
 | [figure](skills/figure/SKILL.md) | 学术实验数据图、参考风格复绘 | 多面板曲线、双轴、误差带、分组柱状图；提供代码与数据 |
+| [academic-icons](skills/academic-icons/SKILL.md) | 学术示意图小图标选型与布局 | DEPPO 风格素材、语义索引、尺寸与间距规则 |
 
 ## 使用
 
@@ -173,6 +174,18 @@ node skills/method/scripts/export_scene.mjs \
 ```
 
 PNG 默认 3 倍像素尺寸并写入 300 dpi 元数据；PDF 为按画布尺寸生成的单页文件。复杂公式优先通过 LaTeX Live 渲染，保留 `.tex`；公式图片可移动缩放，字符修改后需重新渲染。
+
+## Academic Icons 图标素材
+
+从 DEPPO motivation / method 重绘版整理的 **23 种小图标**，用于模型、成功／失败、查询、门控、优势调节和记忆维护。包含 PNG、部分 SVG、语义索引与逐项来源记录。
+
+![DEPPO 风格图标总览](skills/academic-icons/assets/catalog.png)
+
+[图标 skill](skills/academic-icons/SKILL.md) · [语义索引](skills/academic-icons/references/catalog.md) · [素材与来源](skills/academic-icons/assets/manifest.json)
+
+> 使用 /path/to/draw-skills-motivation_method/skills/academic-icons/SKILL.md，为这张方法图补充语义明确的彩色小图标，调整图标大小与图文间距，保留原有公式比例。
+
+此 skill 处理实体小图标；曲线、柱状图等实验数据图使用 figure skill。素材来源与授权按 manifest 逐项区分。
 
 ## 素材与授权
 

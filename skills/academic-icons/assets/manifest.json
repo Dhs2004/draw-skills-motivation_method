@@ -1,0 +1,339 @@
+[
+  {
+    "name": "abacus",
+    "url": "https://raw.githubusercontent.com/hfg-gmuend/openmoji/master/color/svg/1F9EE.svg",
+    "author": "OpenMoji contributors",
+    "license": "CC BY-SA 4.0",
+    "modifications": "Rasterized and cropped transparent margins",
+    "file": "icons/abacus.png",
+    "sha256": "c574ce711f4df07450896163af4a381b114bfa1c6f1f0b038e492a855479b2d6",
+    "semantic_roles": "优势计算、数值统计",
+    "pixel_size": [
+      178,
+      171
+    ]
+  },
+  {
+    "name": "book",
+    "url": "https://cdn-icons-png.flaticon.com/512/3534/3534033.png",
+    "author": "Not verified",
+    "license": "Publication and redistribution terms not verified",
+    "modifications": "Reused existing project asset; original modification history not fully verified",
+    "file": "icons/book.png",
+    "sha256": "2e9075b0e284ff6514c9aede34401cfbb9e301210c6996beba9a8a6542f5dff8",
+    "semantic_roles": "知识、有效经验",
+    "pixel_size": [
+      512,
+      512
+    ]
+  },
+  {
+    "name": "chart",
+    "url": "https://raw.githubusercontent.com/hfg-gmuend/openmoji/master/color/svg/1F4CA.svg",
+    "author": "OpenMoji contributors",
+    "license": "CC BY-SA 4.0",
+    "modifications": "Rasterized, cropped transparent margins",
+    "file": "icons/chart.png",
+    "sha256": "2134a808c1421ee2d6906b9c3cc55921b85b6f682304cc2e19856145760f8f04",
+    "semantic_roles": "统计、优势幅度、优化结果",
+    "pixel_size": [
+      178,
+      178
+    ]
+  },
+  {
+    "name": "check",
+    "url": "https://raw.githubusercontent.com/hfg-gmuend/openmoji/master/color/svg/2705.svg",
+    "author": "OpenMoji contributors",
+    "license": "CC BY-SA 4.0",
+    "modifications": "Rasterized and cropped transparent margins; original colors retained",
+    "file": "icons/check.png",
+    "sha256": "46d9d05ada2166860ea3da7b867c92e40640bed50c97994d65ac0ada61e395ea",
+    "semantic_roles": "成功结果、通过",
+    "pixel_size": [
+      230,
+      246
+    ],
+    "svg": "icons/check.svg"
+  },
+  {
+    "name": "clock",
+    "url": "https://raw.githubusercontent.com/hfg-gmuend/openmoji/master/color/svg/23F1.svg",
+    "license": "CC BY-SA 4.0",
+    "author": "OpenMoji contributors",
+    "modifications": "Rasterized and cropped transparent margins",
+    "file": "icons/clock.png",
+    "sha256": "2a5ce5cedee24850c6d4a0c2c263f6f6ffbae2540f7d7bad16c351b410a089fd",
+    "semantic_roles": "时间、记忆衰减",
+    "pixel_size": [
+      177,
+      194
+    ]
+  },
+  {
+    "name": "cross",
+    "url": "https://raw.githubusercontent.com/hfg-gmuend/openmoji/master/color/svg/274C.svg",
+    "author": "OpenMoji contributors",
+    "license": "CC BY-SA 4.0",
+    "modifications": "Rasterized and cropped transparent margins; original colors retained",
+    "file": "icons/cross.png",
+    "sha256": "aa1eb5a1ea52ed623e757ab4a62ac13d890ce2bc7c9738dfbac2a87396761dc5",
+    "semantic_roles": "失败结果、无效动作",
+    "pixel_size": [
+      248,
+      248
+    ],
+    "svg": "icons/cross.svg"
+  },
+  {
+    "name": "dice",
+    "url": "https://raw.githubusercontent.com/hfg-gmuend/openmoji/master/color/svg/1F3B2.svg",
+    "author": "OpenMoji contributors",
+    "license": "CC BY-SA 4.0",
+    "modifications": "Rasterized and cropped transparent margins",
+    "file": "icons/dice.png",
+    "sha256": "e7ce6b9d3bac859a94046b0f2ac8bd502c801fbd079a03f729528774d20e025d",
+    "semantic_roles": "采样、随机探索",
+    "pixel_size": [
+      164,
+      142
+    ]
+  },
+  {
+    "name": "environment",
+    "code": "1F30D",
+    "url": "https://raw.githubusercontent.com/hfg-gmuend/openmoji/master/color/svg/1F30D.svg",
+    "author": "OpenMoji contributors",
+    "license": "CC BY-SA 4.0",
+    "modifications": "Rasterized and cropped transparent margins; original colors retained",
+    "file": "icons/environment.png",
+    "sha256": "17b11afd567ab2c344a1ae84d86472e17fd1351a1df52bd595b144681a5e91db",
+    "semantic_roles": "环境交互",
+    "pixel_size": [
+      512,
+      512
+    ]
+  },
+  {
+    "name": "flame",
+    "code": "1F525",
+    "url": "https://raw.githubusercontent.com/hfg-gmuend/openmoji/master/color/svg/1F525.svg",
+    "author": "OpenMoji contributors",
+    "license": "CC BY-SA 4.0",
+    "modifications": "Rasterized and cropped transparent margins; original colors retained",
+    "file": "icons/flame.png",
+    "sha256": "d32963963086f3f1ac1c033ad7cf1f0e4c8622c43440fcd80b520ecc59a70661",
+    "semantic_roles": "可训练状态",
+    "pixel_size": [
+      512,
+      512
+    ]
+  },
+  {
+    "name": "gate",
+    "url": "https://raw.githubusercontent.com/hfg-gmuend/openmoji/master/color/svg/1F6A6.svg",
+    "author": "OpenMoji contributors",
+    "license": "CC BY-SA 4.0",
+    "modifications": "Rasterized and cropped transparent margins; original colors retained",
+    "file": "icons/gate.png",
+    "sha256": "b24f9136198403b01031dbcdb32b77b15d9b86fac93fc25caaa2b09e9260e272",
+    "semantic_roles": "条件门控",
+    "pixel_size": [
+      128,
+      278
+    ],
+    "svg": "icons/gate.svg"
+  },
+  {
+    "name": "gear",
+    "url": "https://raw.githubusercontent.com/hfg-gmuend/openmoji/master/color/svg/2699.svg",
+    "author": "OpenMoji contributors",
+    "license": "CC BY-SA 4.0",
+    "modifications": "Rasterized and cropped transparent margins",
+    "file": "icons/gear.png",
+    "sha256": "3c324216c7223cdc2c1cfa7dfdcca9cea6fe9a3b9454c0e8b3c80dd1481c7405",
+    "semantic_roles": "参数优化",
+    "pixel_size": [
+      176,
+      172
+    ]
+  },
+  {
+    "name": "recycle",
+    "url": "https://raw.githubusercontent.com/hfg-gmuend/openmoji/master/color/svg/267B.svg",
+    "author": "OpenMoji contributors",
+    "license": "CC BY-SA 4.0",
+    "modifications": "Rasterized and cropped transparent margins; original colors retained",
+    "file": "icons/recycle.png",
+    "sha256": "6b682a72d43bf57a315358f4482ab0081cd00b261e9bf5b8f123bcdfb9901ea7",
+    "semantic_roles": "记忆维护与更新",
+    "pixel_size": [
+      227,
+      222
+    ],
+    "svg": "icons/recycle.svg"
+  },
+  {
+    "name": "repeat",
+    "url": "https://raw.githubusercontent.com/hfg-gmuend/openmoji/master/color/svg/1F501.svg",
+    "author": "OpenMoji contributors",
+    "license": "CC BY-SA 4.0",
+    "modifications": "Rasterized and cropped transparent margins; original colors retained",
+    "file": "icons/repeat.png",
+    "sha256": "f85461311f7b2fd76637cec40061c553b9cb06a5003b7a2e2ed230a96f98a20d",
+    "semantic_roles": "重复行为、保持原操作",
+    "pixel_size": [
+      288,
+      264
+    ],
+    "svg": "icons/repeat.svg"
+  },
+  {
+    "name": "robot",
+    "url": "https://cdn-icons-png.flaticon.com/512/4712/4712109.png",
+    "author": "Not verified",
+    "license": "Publication and redistribution terms not verified",
+    "modifications": "Reused existing project asset; original modification history not fully verified",
+    "file": "icons/robot.png",
+    "sha256": "ee3fba645d983bee9601ff42cded3e22dbfabc23ce1a873cdc02586337f11ded",
+    "semantic_roles": "模型、策略、智能体",
+    "pixel_size": [
+      512,
+      512
+    ]
+  },
+  {
+    "name": "save",
+    "url": "https://raw.githubusercontent.com/hfg-gmuend/openmoji/master/color/svg/1F4BE.svg",
+    "author": "OpenMoji contributors",
+    "license": "CC BY-SA 4.0",
+    "modifications": "Rasterized and cropped transparent margins; original colors retained",
+    "file": "icons/save.png",
+    "sha256": "77c9579d2def201d82fd9fad83ad14090504fb9f7a88dcac8679fa57cd61ffb2",
+    "semantic_roles": "经验写入",
+    "pixel_size": [
+      278,
+      278
+    ],
+    "svg": "icons/save.svg"
+  },
+  {
+    "name": "scales",
+    "url": "https://cdn-icons-png.flaticon.com/512/924/924954.png",
+    "author": "Not verified",
+    "license": "Publication and redistribution terms not verified",
+    "modifications": "Reused existing project asset; original modification history not fully verified",
+    "file": "icons/scales.png",
+    "sha256": "fe8bb3c8f86aa08dc88fb272594f7e4164b65266b3f596bd02c6a8b2a41dbe43",
+    "semantic_roles": "成功失败比较、目标权衡",
+    "pixel_size": [
+      512,
+      512
+    ]
+  },
+  {
+    "name": "scissors",
+    "code": "2702",
+    "url": "https://raw.githubusercontent.com/hfg-gmuend/openmoji/master/color/svg/2702.svg",
+    "author": "OpenMoji contributors",
+    "license": "CC BY-SA 4.0",
+    "modifications": "Rasterized and cropped transparent margins; original colors retained",
+    "file": "icons/scissors.png",
+    "sha256": "11884398dd891b33dc31fac21b5857c8fc4a10c1dbc5f7d3fd8cd566715eeace",
+    "semantic_roles": "裁剪、剪枝",
+    "pixel_size": [
+      512,
+      512
+    ]
+  },
+  {
+    "name": "search",
+    "url": "https://raw.githubusercontent.com/hfg-gmuend/openmoji/master/color/svg/1F50D.svg",
+    "author": "OpenMoji contributors",
+    "license": "CC BY-SA 4.0",
+    "modifications": "Rasterized and cropped transparent margins; original colors retained",
+    "file": "icons/search.png",
+    "sha256": "fa5b715f35f0e4e798408ab94b07daebc90d40e20d698cdfdd483e987a1b4b68",
+    "semantic_roles": "经验检索",
+    "pixel_size": [
+      225,
+      268
+    ],
+    "svg": "icons/search.svg"
+  },
+  {
+    "name": "sliders",
+    "url": "https://raw.githubusercontent.com/hfg-gmuend/openmoji/master/color/svg/1F39A.svg",
+    "author": "OpenMoji contributors",
+    "license": "CC BY-SA 4.0",
+    "modifications": "Rasterized and cropped transparent margins; original colors retained",
+    "file": "icons/sliders.png",
+    "sha256": "97df18c19e697c3aa6b62b2ac52368a9641445a813764d0e6b0bf852bc21489d",
+    "semantic_roles": "重加权、幅度调节",
+    "pixel_size": [
+      214,
+      343
+    ],
+    "svg": "icons/sliders.svg"
+  },
+  {
+    "name": "sprout",
+    "url": "https://raw.githubusercontent.com/hfg-gmuend/openmoji/master/color/svg/1F331.svg",
+    "author": "OpenMoji contributors",
+    "license": "CC BY-SA 4.0",
+    "modifications": "Rasterized and cropped transparent margins; original colors retained",
+    "file": "icons/sprout.png",
+    "sha256": "4ef25a896b994be43b301a5d01b1dae055fd0bb07a107d0f77404b230737c54b",
+    "semantic_roles": "新鲜经验",
+    "pixel_size": [
+      252,
+      244
+    ],
+    "svg": "icons/sprout.svg"
+  },
+  {
+    "name": "trash",
+    "url": "https://raw.githubusercontent.com/hfg-gmuend/openmoji/master/color/svg/1F5D1.svg",
+    "author": "OpenMoji contributors",
+    "license": "CC BY-SA 4.0",
+    "modifications": "Rasterized and cropped transparent margins; original colors retained",
+    "file": "icons/trash.png",
+    "sha256": "8c25ff552288354395fc0c4e4be2dd7c7c63606045e4e3b4342ebd44c7018688",
+    "semantic_roles": "删除低价值条目",
+    "pixel_size": [
+      236,
+      268
+    ],
+    "svg": "icons/trash.svg"
+  },
+  {
+    "name": "trophy",
+    "url": "https://raw.githubusercontent.com/hfg-gmuend/openmoji/master/color/svg/1F3C6.svg",
+    "author": "OpenMoji contributors",
+    "license": "CC BY-SA 4.0",
+    "modifications": "Rasterized and cropped transparent margins; original colors retained",
+    "file": "icons/trophy.png",
+    "sha256": "2d9ff6300ae66bb7e717a009b03bb8df6d401144cd2739bd1f7afc829ddda9a7",
+    "semantic_roles": "成功、奖励",
+    "pixel_size": [
+      266,
+      266
+    ],
+    "svg": "icons/trophy.svg"
+  },
+  {
+    "name": "warning",
+    "url": "https://raw.githubusercontent.com/hfg-gmuend/openmoji/master/color/svg/26A0.svg",
+    "author": "OpenMoji contributors",
+    "license": "CC BY-SA 4.0",
+    "modifications": "Rasterized and cropped transparent margins; original colors retained",
+    "file": "icons/warning.png",
+    "sha256": "43ad1cd9d405382bb8c651c5d6390c6737b6ee64b0e1e2b0ca2b5d67a8f85094",
+    "semantic_roles": "失败模式、风险提示",
+    "pixel_size": [
+      278,
+      278
+    ],
+    "svg": "icons/warning.svg"
+  }
+]

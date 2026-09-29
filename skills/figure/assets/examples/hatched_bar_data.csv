@@ -1,0 +1,49 @@
+task,method,metric,unit,value
+Task A,Base,Success,%,77.4
+Task A,Base,F1,%,56.0
+Task A,Base,Latency,ms,105.2
+Task A,Base,Cost,units,57.0
+Task A,Model A,Success,%,82.8
+Task A,Model A,F1,%,70.1
+Task A,Model A,Latency,ms,186.3
+Task A,Model A,Cost,units,28.1
+Task A,Model B,Success,%,56.6
+Task A,Model B,F1,%,55.9
+Task A,Model B,Latency,ms,173.9
+Task A,Model B,Cost,units,32.3
+Task A,Model C,Success,%,77.3
+Task A,Model C,F1,%,64.3
+Task A,Model C,Latency,ms,125.2
+Task A,Model C,Cost,units,27.4
+Task B,Base,Success,%,66.1
+Task B,Base,F1,%,64.0
+Task B,Base,Latency,ms,176.7
+Task B,Base,Cost,units,64.4
+Task B,Model A,Success,%,74.0
+Task B,Model A,F1,%,85.2
+Task B,Model A,Latency,ms,183.1
+Task B,Model A,Cost,units,28.9
+Task B,Model B,Success,%,59.8
+Task B,Model B,F1,%,76.4
+Task B,Model B,Latency,ms,127.9
+Task B,Model B,Cost,units,59.2
+Task B,Model C,Success,%,68.1
+Task B,Model C,F1,%,85.5
+Task B,Model C,Latency,ms,182.4
+Task B,Model C,Cost,units,40.5
+Task C,Base,Success,%,85.5
+Task C,Base,F1,%,87.9
+Task C,Base,Latency,ms,134.1
+Task C,Base,Cost,units,34.1
+Task C,Model A,Success,%,85.6
+Task C,Model A,F1,%,68.1
+Task C,Model A,Latency,ms,110.5
+Task C,Model A,Cost,units,46.4
+Task C,Model B,Success,%,69.0
+Task C,Model B,F1,%,74.4
+Task C,Model B,Latency,ms,186.9
+Task C,Model B,Cost,units,46.4
+Task C,Model C,Success,%,70.7
+Task C,Model C,F1,%,69.2
+Task C,Model C,Latency,ms,158.7
+Task C,Model C,Cost,units,63.6

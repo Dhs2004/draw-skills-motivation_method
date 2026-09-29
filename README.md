@@ -121,7 +121,7 @@ git clone https://github.com/Dhs2004/draw-skills-motivation_method.git
 
 ## Figure 数据图示例
 
-以下图表风格均使用 retry 生成的**模拟数据示例**。前三种的随机种子为 `20260929`，其余风格使用 `20260930` 生成的数据。展示视觉风格，不代表真实实验结果。figure skill 使用标准科学绘图库，不沿用概念示意图的卡通字体或实体图标规则。
+以下图表风格均使用 retry 生成的**模拟数据示例**。前三种的随机种子为 `20260929`，雷达图与三维图使用 `20260930` 生成的数据，多指标纹理柱状图使用 `20261001`。展示视觉风格，不代表真实实验结果。figure skill 使用标准科学绘图库，不沿用概念示意图的卡通字体或实体图标规则。
 
 ### 青橙三联训练与效率曲线
 
@@ -158,9 +158,22 @@ git clone https://github.com/Dhs2004/draw-skills-motivation_method.git
 
 ### 灰度纹理双面板柱状图
 
-![灰度纹理双面板柱状图（模拟数据）](skills/figure/assets/examples/paired_grayscale_hatched_bars_preview.png)
+支持多指标与多任务；组内柱子相接，“全连续纹理柱群”连组间也无空隙。
 
-[高清 PNG](skills/figure/assets/examples/paired_grayscale_hatched_bars_synthetic.png) · [PDF](skills/figure/assets/examples/paired_grayscale_hatched_bars_synthetic.pdf) · [SVG](skills/figure/assets/examples/paired_grayscale_hatched_bars_synthetic.svg)
+<table>
+  <tr>
+    <td align="center" width="33%"><b>双指标紧密对比</b><br><a href="skills/figure/assets/examples/hatched_bar_paired_metrics.png"><img src="skills/figure/assets/examples/hatched_bar_paired_metrics_preview.png" alt="双指标紧密对比（模拟数据）" width="260"></a><br><a href="skills/figure/assets/examples/hatched_bar_paired_metrics.png">PNG</a> · <a href="skills/figure/assets/examples/hatched_bar_paired_metrics.pdf">PDF</a> · <a href="skills/figure/assets/examples/hatched_bar_paired_metrics.svg">SVG</a></td>
+    <td align="center" width="33%"><b>多任务分组对比</b><br><a href="skills/figure/assets/examples/hatched_bar_grouped_tasks.png"><img src="skills/figure/assets/examples/hatched_bar_grouped_tasks_preview.png" alt="多任务分组对比（模拟数据）" width="260"></a><br><a href="skills/figure/assets/examples/hatched_bar_grouped_tasks.png">PNG</a> · <a href="skills/figure/assets/examples/hatched_bar_grouped_tasks.pdf">PDF</a> · <a href="skills/figure/assets/examples/hatched_bar_grouped_tasks.svg">SVG</a></td>
+    <td align="center" width="33%"><b>多指标分面对比</b><br><a href="skills/figure/assets/examples/hatched_bar_four_metric_facets.png"><img src="skills/figure/assets/examples/hatched_bar_four_metric_facets_preview.png" alt="多指标分面对比（模拟数据）" width="260"></a><br><a href="skills/figure/assets/examples/hatched_bar_four_metric_facets.png">PNG</a> · <a href="skills/figure/assets/examples/hatched_bar_four_metric_facets.pdf">PDF</a> · <a href="skills/figure/assets/examples/hatched_bar_four_metric_facets.svg">SVG</a></td>
+  </tr>
+  <tr>
+    <td align="center" width="33%"><b>全连续纹理柱群</b><br><a href="skills/figure/assets/examples/hatched_bar_continuous_blocks.png"><img src="skills/figure/assets/examples/hatched_bar_continuous_blocks_preview.png" alt="全连续纹理柱群（模拟数据）" width="260"></a><br><a href="skills/figure/assets/examples/hatched_bar_continuous_blocks.png">PNG</a> · <a href="skills/figure/assets/examples/hatched_bar_continuous_blocks.pdf">PDF</a> · <a href="skills/figure/assets/examples/hatched_bar_continuous_blocks.svg">SVG</a></td>
+    <td align="center" width="33%"><b>横向多指标对比</b><br><a href="skills/figure/assets/examples/hatched_bar_horizontal_metrics.png"><img src="skills/figure/assets/examples/hatched_bar_horizontal_metrics_preview.png" alt="横向多指标对比（模拟数据）" width="260"></a><br><a href="skills/figure/assets/examples/hatched_bar_horizontal_metrics.png">PNG</a> · <a href="skills/figure/assets/examples/hatched_bar_horizontal_metrics.pdf">PDF</a> · <a href="skills/figure/assets/examples/hatched_bar_horizontal_metrics.svg">SVG</a></td>
+    <td align="center" width="33%"><b>归一化指标对比</b><br><a href="skills/figure/assets/examples/hatched_bar_normalized_metrics.png"><img src="skills/figure/assets/examples/hatched_bar_normalized_metrics_preview.png" alt="归一化指标对比（模拟数据）" width="260"></a><br><a href="skills/figure/assets/examples/hatched_bar_normalized_metrics.png">PNG</a> · <a href="skills/figure/assets/examples/hatched_bar_normalized_metrics.pdf">PDF</a> · <a href="skills/figure/assets/examples/hatched_bar_normalized_metrics.svg">SVG</a></td>
+  </tr>
+</table>
+
+[设计规则](skills/figure/references/hatched-bars.md) · [绘图代码](skills/figure/scripts/render_hatched_bars.py) · [数据 JSON](skills/figure/assets/examples/hatched_bar_data.json) · [CSV](skills/figure/assets/examples/hatched_bar_data.csv)
 
 ### 透视归一化三维柱状图
 

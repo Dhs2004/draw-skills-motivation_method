@@ -26,9 +26,7 @@
 
 ## 灰度纹理双面板柱状图
 
-[预览](../assets/examples/paired_grayscale_hatched_bars_preview.png) · [PNG](../assets/examples/paired_grayscale_hatched_bars_synthetic.png) · [PDF](../assets/examples/paired_grayscale_hatched_bars_synthetic.pdf) · [SVG](../assets/examples/paired_grayscale_hatched_bars_synthetic.svg)
-
-两面板灰度／米色柱状图，用纹理区分方法；柱形从零开始，顶部标注原值，任务标签放左上。控制斜排类别标签的长度。
+此类图包含六张同级样例，覆盖多指标、多任务、横向和归一化对比。采用组内相接柱体，另有所有柱体连续无空隙的布局。见 [设计与生成说明](hatched-bars.md) 和 [六图总览](../assets/examples/hatched_bar_gallery_overview.png)。
 
 ## 透视归一化三维柱状图
 

@@ -121,7 +121,7 @@ git clone https://github.com/Dhs2004/draw-skills-motivation_method.git
 
 ## Figure 数据图示例
 
-以下十三种风格均使用 retry 生成的**模拟数据示例**。前三种的随机种子为 `20260929`，其余风格使用 `20260930` 生成的数据。展示视觉风格，不代表真实实验结果。figure skill 使用标准科学绘图库，不沿用概念示意图的卡通字体或实体图标规则。
+以下图表风格均使用 retry 生成的**模拟数据示例**。前三种的随机种子为 `20260929`，其余风格使用 `20260930` 生成的数据。展示视觉风格，不代表真实实验结果。figure skill 使用标准科学绘图库，不沿用概念示意图的卡通字体或实体图标规则。
 
 ### 青橙三联训练与效率曲线
 
@@ -142,12 +142,6 @@ git clone https://github.com/Dhs2004/draw-skills-motivation_method.git
 [高清 PNG](skills/figure/assets/examples/grouped_bar_blue_palette_hatched_baseline_synthetic.png) · [PDF](skills/figure/assets/examples/grouped_bar_blue_palette_hatched_baseline_synthetic.pdf) · [SVG](skills/figure/assets/examples/grouped_bar_blue_palette_hatched_baseline_synthetic.svg)
 
 ### 彩色外环雷达图
-
-![彩色外环雷达图（模拟数据）](skills/figure/assets/examples/annular_pastel_radar_preview.png)
-
-[高清 PNG](skills/figure/assets/examples/annular_pastel_radar_synthetic.png) · [PDF](skills/figure/assets/examples/annular_pastel_radar_synthetic.pdf) · [SVG](skills/figure/assets/examples/annular_pastel_radar_synthetic.svg)
-
-### 彩色外环雷达图变体
 
 <table>
   <tr>
@@ -200,7 +194,7 @@ python skills/figure/scripts/render_geometric_styles.py --out ./geometric-figure
   --data skills/figure/assets/examples/geometric_styles_data.json
 ```
 
-六种新增雷达图使用相同数据、轴顺序和 0–100 刻度，只改变彩环、网格、文字与线条设计。
+六张彩色外环雷达图使用相同数据、轴顺序和 0–100 刻度，只改变彩环、网格、文字与线条设计。
 
 [六种雷达图对照总览](skills/figure/assets/examples/radar_gallery_overview.png) · [雷达图设计说明](skills/figure/references/radar-design.md) · [雷达数据](skills/figure/assets/examples/radar_data.json) · [绘图代码](skills/figure/scripts/render_radar_gallery.py)
 

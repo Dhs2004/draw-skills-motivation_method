@@ -45,15 +45,15 @@ git clone https://github.com/Dhs2004/draw-skills-motivation_method.git
   </tr>
   <tr>
     <th>DAPO</th>
-    <th>长推理强化学习</th>
+    <th>GiGPO</th>
   </tr>
   <tr>
     <td align="center"><a href="skills/motivation/assets/dapo/motivation.png"><img src="skills/motivation/assets/dapo/motivation.png" alt="DAPO motivation" width="380"></a></td>
-    <td>基于 <a href="https://arxiv.org/abs/2503.14476">DAPO (2025)</a>，展示四组问题与设计响应：<ul><li>探索不足 → Clip-Higher</li><li>有效样本组减少 → 动态采样</li><li>长回答 token 权重稀释 → token 级损失</li><li>截断惩罚噪声 → 超长奖励塑形</li></ul><a href="skills/motivation/assets/dapo/README.md">示例说明与素材来源</a></td>
+    <td align="center"><a href="skills/motivation/assets/gigpo/motivation.png"><img src="skills/motivation/assets/gigpo/motivation.png" alt="GiGPO motivation" width="380"></a></td>
   </tr>
   <tr>
     <td align="center"><a href="skills/motivation/assets/dapo/motivation.excalidraw">可编辑源文件</a> · <a href="skills/motivation/assets/dapo/motivation.pdf">PDF</a></td>
-    <td></td>
+    <td align="center"><a href="skills/motivation/assets/gigpo/motivation.excalidraw">可编辑源文件</a> · <a href="skills/motivation/assets/gigpo/motivation.pdf">PDF</a></td>
   </tr>
 </table>
 
@@ -82,6 +82,14 @@ git clone https://github.com/Dhs2004/draw-skills-motivation_method.git
 ![DAPO method](skills/method/assets/dapo/method.png)
 
 [可编辑源文件](skills/method/assets/dapo/method.excalidraw) · [PDF](skills/method/assets/dapo/method.pdf) · [公式源码](skills/method/assets/dapo/formulas) · [示例说明](skills/method/assets/dapo/README.md)
+
+### GiGPO
+
+基于 [Group-in-Group Policy Optimization (2025)](https://arxiv.org/abs/2505.10978)，展开多步环境交互、重复状态分组、两层优势与策略更新；附折扣回报和逐动作信用分配的数值示例。
+
+![GiGPO method](skills/method/assets/gigpo/method.png)
+
+[可编辑源文件](skills/method/assets/gigpo/method.excalidraw) · [PDF](skills/method/assets/gigpo/method.pdf) · [公式源码](skills/method/assets/gigpo/formulas) · [示例说明](skills/method/assets/gigpo/README.md)
 
 示例均为公开论文的重新绘制，用于说明绘图风格。简化范围和素材来源见 [示例说明](skills/method/references/public-examples.md)。
 

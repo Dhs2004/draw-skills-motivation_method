@@ -7,7 +7,9 @@
 
 - DAPO：Yu et al., DAPO (2025)，https://arxiv.org/abs/2503.14476 。展示四项核心机制；目标函数显式标出有效 token 的损失屏蔽，示意组大小不代表论文配置。详见 [DAPO 示例说明](../assets/dapo/README.md)。
 
-各 skill 的 assets/grpo、assets/transformer 与 assets/dapo 包含相应 PNG 预览、PDF 和可编辑源文件；复杂公式的 .tex 与 SVG 保存在对应 formulas 目录。公式由 LaTeX Live 渲染，原生框线、文字与机制小图仍可编辑。示例来自公开论文的重新绘制，不表示论文作者背书。
+- GiGPO：Feng et al., Group-in-Group Policy Optimization for LLM Agent Training (2025)，https://arxiv.org/abs/2505.10978 。复用同一批轨迹中的重复状态，结合 episode 与 step 两层优势；图中数值为可核算的简化示例，非实验测量。详见 [GiGPO 示例说明](../assets/gigpo/README.md)。
+
+各 skill 的 assets/grpo、assets/transformer、assets/dapo 与 assets/gigpo 包含相应 PNG 预览、PDF 和可编辑源文件；复杂公式的 .tex 与 SVG 保存在对应 formulas 目录。公式由 LaTeX Live 渲染，原生框线、文字与机制小图仍可编辑。示例来自公开论文的重新绘制，不表示论文作者背书。
 
 ## 实体图标
 

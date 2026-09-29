@@ -29,3 +29,5 @@ DEPPO 的基础优势来自论文指定的 **GiGPO state-aware group-based optim
 新增 OpenMoji 图标的来源、作者、CC BY-SA 4.0 许可及修改记录见 [icon-sources.json](icon-sources.json) 与 [许可副本](OpenMoji-LICENSE.txt)。复用图标来源见相邻 `../icons/` 目录。Flaticon 素材的具体出版许可状态沿用仓库素材说明。
 
 原生文字、框线、箭头和斜线填充可编辑；复杂公式为 LaTeX Live 渲染的 SVG，源码位于 method 示例的 `formulas/` 目录。PNG 为 3 倍像素、300 dpi，PDF 为单页。
+
+本版补充了成功／失败、重复动作、优势调节、经验写入与回收剪枝的语义图标，并调整图文间距。公式比例保持不变。

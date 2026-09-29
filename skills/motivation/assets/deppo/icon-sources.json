@@ -47,5 +47,47 @@
     "author": "OpenMoji contributors",
     "license": "CC BY-SA 4.0",
     "modifications": "Rasterized and cropped transparent margins; original colors retained"
+  },
+  {
+    "name": "trophy",
+    "url": "https://raw.githubusercontent.com/hfg-gmuend/openmoji/master/color/svg/1F3C6.svg",
+    "author": "OpenMoji contributors",
+    "license": "CC BY-SA 4.0",
+    "modifications": "Rasterized and cropped transparent margins; original colors retained"
+  },
+  {
+    "name": "repeat",
+    "url": "https://raw.githubusercontent.com/hfg-gmuend/openmoji/master/color/svg/1F501.svg",
+    "author": "OpenMoji contributors",
+    "license": "CC BY-SA 4.0",
+    "modifications": "Rasterized and cropped transparent margins; original colors retained"
+  },
+  {
+    "name": "sliders",
+    "url": "https://raw.githubusercontent.com/hfg-gmuend/openmoji/master/color/svg/1F39A.svg",
+    "author": "OpenMoji contributors",
+    "license": "CC BY-SA 4.0",
+    "modifications": "Rasterized and cropped transparent margins; original colors retained"
+  },
+  {
+    "name": "recycle",
+    "url": "https://raw.githubusercontent.com/hfg-gmuend/openmoji/master/color/svg/267B.svg",
+    "author": "OpenMoji contributors",
+    "license": "CC BY-SA 4.0",
+    "modifications": "Rasterized and cropped transparent margins; original colors retained"
+  },
+  {
+    "name": "trash",
+    "url": "https://raw.githubusercontent.com/hfg-gmuend/openmoji/master/color/svg/1F5D1.svg",
+    "author": "OpenMoji contributors",
+    "license": "CC BY-SA 4.0",
+    "modifications": "Rasterized and cropped transparent margins; original colors retained"
+  },
+  {
+    "name": "save",
+    "url": "https://raw.githubusercontent.com/hfg-gmuend/openmoji/master/color/svg/1F4BE.svg",
+    "author": "OpenMoji contributors",
+    "license": "CC BY-SA 4.0",
+    "modifications": "Rasterized and cropped transparent margins; original colors retained"
   }
 ]

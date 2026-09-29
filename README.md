@@ -110,7 +110,7 @@ git clone https://github.com/Dhs2004/draw-skills-motivation_method.git
 
 ### DEPPO
 
-基于已接收论文 **Dual Experience Pool Policy Optimization for Long-Horizon Reinforcement Learning**，展示历史成功／失败统计、支持度门控、结果感知优势重加权，以及不对称经验更新与衰减剪枝。
+基于已接收论文 **Dual Experience Pool Policy Optimization for Long-Horizon Reinforcement Learning**，展示历史成功／失败统计、支持度门控、结果感知优势重加权，以及不对称经验更新与衰减剪枝。使用更丰富的彩色语义图标区分成功／失败、优势调节和记忆维护。
 
 ![DEPPO method](skills/method/assets/deppo/method.png)
 

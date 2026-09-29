@@ -1,4 +1,4 @@
-# 公开论文示例与素材来源
+# 论文示例与素材来源
 
 ## 论文范围
 
@@ -11,7 +11,9 @@
 
 - PPO：Schulman et al., Proximal Policy Optimization Algorithms (2017)，https://arxiv.org/abs/1707.06347 。采用原始 PPO-Clip actor–critic 流程，含 GAE 和可选熵奖励；曲线仅展示单样本 surrogate 的形状，不代表实际更新的硬边界。详见 [PPO 示例说明](../assets/ppo/README.md)。
 
-各 skill 的 assets/grpo、assets/transformer、assets/dapo、assets/gigpo 与 assets/ppo 包含相应 PNG 预览、PDF 和可编辑源文件；复杂公式的 .tex 与 SVG 保存在对应 formulas 目录。公式由 LaTeX Live 渲染，原生框线、文字与机制小图仍可编辑。示例来自公开论文的重新绘制，不表示论文作者背书。
+- DEPPO：Dual Experience Pool Policy Optimization for Long-Horizon Reinforcement Learning（已接收，作者提供的论文版本）。通过任务—状态条件下的双经验池统计，对 GiGPO 基础优势做支持度门控和结果感知重加权；先查询、策略优化后写入。详见 [DEPPO 示例说明](../assets/deppo/README.md)。
+
+各 skill 的 assets/grpo、assets/transformer、assets/dapo、assets/gigpo、assets/ppo 与 assets/deppo 包含相应 PNG 预览、PDF 和可编辑源文件；复杂公式的 .tex 与 SVG 保存在对应 formulas 目录。公式由 LaTeX Live 渲染，原生框线、文字与机制小图仍可编辑。示例根据对应论文重新绘制，不表示论文作者背书。
 
 ## 实体图标
 

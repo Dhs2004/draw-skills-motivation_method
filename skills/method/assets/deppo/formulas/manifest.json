@@ -1,0 +1,52 @@
+[
+  {
+    "name": "probability",
+    "latex": "P^{\\pm}(a_t\\mid u,s_t)=\\frac{c_u^{\\pm}(s_t,a_t)+\\alpha}{N_u^{\\pm}(s_t)+\\alpha|\\mathcal A_{u,s_t}|}",
+    "x": 348.865,
+    "y": 245.255,
+    "width": 317.27,
+    "height": 43.49,
+    "size": 25,
+    "renderSource": "https://www.latexlive.com/"
+  },
+  {
+    "name": "preference",
+    "latex": "\\Delta_t=\\log\\frac{P^+(a_t\\mid u,s_t)+\\epsilon}{P^-(a_t\\mid u,s_t)+\\epsilon}",
+    "x": 388.98755,
+    "y": 351.23665,
+    "width": 237.02490000000003,
+    "height": 43.5267,
+    "size": 27,
+    "renderSource": "https://www.latexlive.com/"
+  },
+  {
+    "name": "reweight",
+    "latex": "\\widetilde A_{i,t}=\\left[\\operatorname{clip}\\!\\left(e^{\\beta y_i\\Delta_t},w_{\\min},w_{\\max}\\right)\\right]^{g_t} A_{i,t}",
+    "x": 724,
+    "y": 291.3203018007402,
+    "width": 408,
+    "height": 38.35939639851966,
+    "size": 26,
+    "renderSource": "https://www.latexlive.com/"
+  },
+  {
+    "name": "ratio",
+    "latex": "r_t(\\theta)=\\frac{\\pi_\\theta(a_t\\mid s_t)}{\\pi_{\\theta_{\\rm old}}(a_t\\mid s_t)}",
+    "x": 1231.8931499999999,
+    "y": 269.3616,
+    "width": 207.21370000000002,
+    "height": 49.2768,
+    "size": 29,
+    "renderSource": "https://www.latexlive.com/"
+  },
+  {
+    "name": "objective",
+    "latex": "\\mathcal L_{\\rm DEPPO}=-\\mathbb E\\!\\left[\\frac1T\\sum_{t=1}^{T}\\min\\!\\left(r_t(\\theta)\\widetilde A_t,\\operatorname{clip}(r_t(\\theta),1-\\varepsilon_{\\rm clip},1+\\varepsilon_{\\rm clip})\\widetilde A_t\\right)\\right]",
+    "x": 484.30809999999997,
+    "y": 491.2,
+    "width": 815.3838000000001,
+    "height": 48.6,
+    "size": 27,
+    "renderSource": "https://www.latexlive.com/"
+  }
+]

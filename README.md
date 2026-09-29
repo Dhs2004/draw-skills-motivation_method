@@ -56,13 +56,13 @@ git clone https://github.com/Dhs2004/draw-skills-motivation_method.git
     <td align="center"><a href="skills/motivation/assets/dapo/motivation.excalidraw">可编辑源文件</a> · <a href="skills/motivation/assets/dapo/motivation.pdf">PDF</a></td>
     <td align="center"><a href="skills/motivation/assets/gigpo/motivation.excalidraw">可编辑源文件</a> · <a href="skills/motivation/assets/gigpo/motivation.pdf">PDF</a></td>
   </tr>
-  <tr><th>PPO</th><th>PPO-Clip</th></tr>
+  <tr><th>PPO</th><th>DEPPO</th></tr>
   <tr>
     <td align="center"><a href="skills/motivation/assets/ppo/motivation.png"><img src="skills/motivation/assets/ppo/motivation.png" alt="PPO motivation" width="380"></a></td>
-    <td>基于 <a href="https://arxiv.org/abs/1707.06347">PPO (2017)</a>：<ul><li>裁剪代理目标，限制过大变化的优化激励</li><li>同一批新数据执行多轮 mini-batch 更新</li><li>以一阶优化简化策略训练</li></ul>采用原始 actor–critic 场景，包含 GAE、价值拟合和可选熵奖励。<br><a href="skills/motivation/assets/ppo/README.md">示例说明与素材来源</a></td>
+    <td align="center"><a href="skills/motivation/assets/deppo/motivation.png"><img src="skills/motivation/assets/deppo/motivation.png" alt="DEPPO motivation" width="380"></a></td>
   </tr>
   <tr>
-    <td align="center"><a href="skills/motivation/assets/ppo/motivation.excalidraw">可编辑源文件</a> · <a href="skills/motivation/assets/ppo/motivation.pdf">PDF</a></td><td></td>
+    <td align="center"><a href="skills/motivation/assets/ppo/motivation.excalidraw">可编辑源文件</a> · <a href="skills/motivation/assets/ppo/motivation.pdf">PDF</a></td><td align="center"><a href="skills/motivation/assets/deppo/motivation.excalidraw">可编辑源文件</a> · <a href="skills/motivation/assets/deppo/motivation.pdf">PDF</a></td>
   </tr>
 </table>
 
@@ -108,7 +108,15 @@ git clone https://github.com/Dhs2004/draw-skills-motivation_method.git
 
 [可编辑源文件](skills/method/assets/ppo/method.excalidraw) · [PDF](skills/method/assets/ppo/method.pdf) · [公式源码](skills/method/assets/ppo/formulas) · [示例说明](skills/method/assets/ppo/README.md)
 
-示例均为公开论文的重新绘制，用于说明绘图风格。简化范围和素材来源见 [示例说明](skills/method/references/public-examples.md)。
+### DEPPO
+
+基于已接收论文 **Dual Experience Pool Policy Optimization for Long-Horizon Reinforcement Learning**，展示历史成功／失败统计、支持度门控、结果感知优势重加权，以及不对称经验更新与衰减剪枝。
+
+![DEPPO method](skills/method/assets/deppo/method.png)
+
+[可编辑源文件](skills/method/assets/deppo/method.excalidraw) · [PDF](skills/method/assets/deppo/method.pdf) · [公式源码](skills/method/assets/deppo/formulas) · [示例说明](skills/method/assets/deppo/README.md)
+
+示例根据对应论文重新绘制，用于说明绘图风格。简化范围和素材来源见 [示例说明](skills/method/references/public-examples.md)。
 
 ## 运行与导出
 

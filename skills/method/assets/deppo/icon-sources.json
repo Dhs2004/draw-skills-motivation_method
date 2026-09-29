@@ -1,0 +1,51 @@
+[
+  {
+    "name": "memory",
+    "url": "https://raw.githubusercontent.com/hfg-gmuend/openmoji/master/color/svg/1F5C3.svg",
+    "author": "OpenMoji contributors",
+    "license": "CC BY-SA 4.0",
+    "modifications": "Rasterized and cropped transparent margins; original colors retained"
+  },
+  {
+    "name": "sprout",
+    "url": "https://raw.githubusercontent.com/hfg-gmuend/openmoji/master/color/svg/1F331.svg",
+    "author": "OpenMoji contributors",
+    "license": "CC BY-SA 4.0",
+    "modifications": "Rasterized and cropped transparent margins; original colors retained"
+  },
+  {
+    "name": "warning",
+    "url": "https://raw.githubusercontent.com/hfg-gmuend/openmoji/master/color/svg/26A0.svg",
+    "author": "OpenMoji contributors",
+    "license": "CC BY-SA 4.0",
+    "modifications": "Rasterized and cropped transparent margins; original colors retained"
+  },
+  {
+    "name": "check",
+    "url": "https://raw.githubusercontent.com/hfg-gmuend/openmoji/master/color/svg/2705.svg",
+    "author": "OpenMoji contributors",
+    "license": "CC BY-SA 4.0",
+    "modifications": "Rasterized and cropped transparent margins; original colors retained"
+  },
+  {
+    "name": "cross",
+    "url": "https://raw.githubusercontent.com/hfg-gmuend/openmoji/master/color/svg/274C.svg",
+    "author": "OpenMoji contributors",
+    "license": "CC BY-SA 4.0",
+    "modifications": "Rasterized and cropped transparent margins; original colors retained"
+  },
+  {
+    "name": "search",
+    "url": "https://raw.githubusercontent.com/hfg-gmuend/openmoji/master/color/svg/1F50D.svg",
+    "author": "OpenMoji contributors",
+    "license": "CC BY-SA 4.0",
+    "modifications": "Rasterized and cropped transparent margins; original colors retained"
+  },
+  {
+    "name": "gate",
+    "url": "https://raw.githubusercontent.com/hfg-gmuend/openmoji/master/color/svg/1F6A6.svg",
+    "author": "OpenMoji contributors",
+    "license": "CC BY-SA 4.0",
+    "modifications": "Rasterized and cropped transparent margins; original colors retained"
+  }
+]

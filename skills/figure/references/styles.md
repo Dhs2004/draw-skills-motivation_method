@@ -1,6 +1,6 @@
 # 三种可复用风格
 
-本页描述视觉规则。所附参考图使用 retry 生成的模拟图，不代表任何真实方法的性能。每种风格的高清 PNG、PDF 和 SVG 见 `../assets/examples/`，原始模拟数据见 [synthetic_data.json](../assets/examples/synthetic_data.json)，表格数据见 [data](../assets/examples/data)。
+本页描述视觉规则。所附示例全部使用模拟数据，不代表任何真实方法的性能。
 
 | 风格名称 | 核心特征 | 样例 |
 |---|---|---|
@@ -15,3 +15,5 @@
 柱状图先将各任务基线定义为 100%，再生成其他系列的相对值；不是绝对交互次数。缺少原始实验基线时不可用这种样例数据代替真实归一化。
 
 推荐从对应绘图函数修改：`plot_trip`、`plot_multi`、`plot_bars`。保留输入—处理—绘图之间的分离；新增风格时按参考调整函数，不强改不相关样例。
+
+参考 DEPPO 的雷达图、3D 图或训练／消融曲线时，转到 [DEPPO 实验图风格](deppo-experiments.md)。

@@ -9,7 +9,9 @@
 
 - GiGPO：Feng et al., Group-in-Group Policy Optimization for LLM Agent Training (2025)，https://arxiv.org/abs/2505.10978 。复用同一批轨迹中的重复状态，结合 episode 与 step 两层优势；轨迹为示意，非实验测量；method 聚焦核心流程，数值例子保留在补充说明。详见 [GiGPO 示例说明](../assets/gigpo/README.md)。
 
-各 skill 的 assets/grpo、assets/transformer、assets/dapo 与 assets/gigpo 包含相应 PNG 预览、PDF 和可编辑源文件；复杂公式的 .tex 与 SVG 保存在对应 formulas 目录。公式由 LaTeX Live 渲染，原生框线、文字与机制小图仍可编辑。示例来自公开论文的重新绘制，不表示论文作者背书。
+- PPO：Schulman et al., Proximal Policy Optimization Algorithms (2017)，https://arxiv.org/abs/1707.06347 。采用原始 PPO-Clip actor–critic 流程，含 GAE 和可选熵奖励；曲线仅展示单样本 surrogate 的形状，不代表实际更新的硬边界。详见 [PPO 示例说明](../assets/ppo/README.md)。
+
+各 skill 的 assets/grpo、assets/transformer、assets/dapo、assets/gigpo 与 assets/ppo 包含相应 PNG 预览、PDF 和可编辑源文件；复杂公式的 .tex 与 SVG 保存在对应 formulas 目录。公式由 LaTeX Live 渲染，原生框线、文字与机制小图仍可编辑。示例来自公开论文的重新绘制，不表示论文作者背书。
 
 ## 实体图标
 

@@ -1,0 +1,52 @@
+[
+  {
+    "name": "old-policy",
+    "latex": "\\pi_{\\theta_{\\rm old}}",
+    "x": 141.0558,
+    "y": 175.8036,
+    "width": 47.8884,
+    "height": 19.3928,
+    "size": 28,
+    "renderSource": "https://www.latexlive.com/"
+  },
+  {
+    "name": "gae",
+    "latex": "\\begin{aligned}\\delta_t&=r_t+\\gamma V(s_{t+1})-V(s_t)\\\\\\hat A_t&=\\sum_{l=0}^{T-1-t}(\\gamma\\lambda)^l\\delta_{t+l}\\end{aligned}",
+    "x": 484.36923800564443,
+    "y": 186,
+    "width": 222.2615239887112,
+    "height": 80,
+    "size": 25,
+    "renderSource": "https://www.latexlive.com/"
+  },
+  {
+    "name": "ratio",
+    "latex": "\\rho_t=\\frac{\\pi_\\theta(a_t\\mid s_t)}{\\pi_{\\theta_{\\rm old}}(a_t\\mid s_t)}",
+    "x": 1029.9998,
+    "y": 268.7112,
+    "width": 167.0004,
+    "height": 47.577600000000004,
+    "size": 28,
+    "renderSource": "https://www.latexlive.com/"
+  },
+  {
+    "name": "clip",
+    "latex": "L^{\\rm CLIP}=\\widehat{\\mathbb E}_t\\!\\left[\\min\\!\\left(\\rho_t\\hat A_t,\\operatorname{clip}(\\rho_t,1-\\epsilon,1+\\epsilon)\\hat A_t\\right)\\right]",
+    "x": 474.91366666666664,
+    "y": 474,
+    "width": 476.1726666666667,
+    "height": 42,
+    "size": 27,
+    "renderSource": "https://www.latexlive.com/"
+  },
+  {
+    "name": "combined",
+    "latex": "J=L^{\\rm CLIP}-c_V\\widehat{\\mathbb E}_t\\!\\left[(V_\\phi(s_t)-\\hat R_t)^2\\right]+c_H\\widehat{\\mathbb E}_t\\!\\left[H(\\pi_\\theta(\\cdot\\mid s_t))\\right]",
+    "x": 771.4063333333334,
+    "y": 578,
+    "width": 509.18733333333336,
+    "height": 38,
+    "size": 23,
+    "renderSource": "https://www.latexlive.com/"
+  }
+]

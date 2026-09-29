@@ -56,6 +56,14 @@ git clone https://github.com/Dhs2004/draw-skills-motivation_method.git
     <td align="center"><a href="skills/motivation/assets/dapo/motivation.excalidraw">可编辑源文件</a> · <a href="skills/motivation/assets/dapo/motivation.pdf">PDF</a></td>
     <td align="center"><a href="skills/motivation/assets/gigpo/motivation.excalidraw">可编辑源文件</a> · <a href="skills/motivation/assets/gigpo/motivation.pdf">PDF</a></td>
   </tr>
+  <tr><th>PPO</th><th>PPO-Clip</th></tr>
+  <tr>
+    <td align="center"><a href="skills/motivation/assets/ppo/motivation.png"><img src="skills/motivation/assets/ppo/motivation.png" alt="PPO motivation" width="380"></a></td>
+    <td>基于 <a href="https://arxiv.org/abs/1707.06347">PPO (2017)</a>：<ul><li>裁剪代理目标，限制过大变化的优化激励</li><li>同一批新数据执行多轮 mini-batch 更新</li><li>以一阶优化简化策略训练</li></ul>采用原始 actor–critic 场景，包含 GAE、价值拟合和可选熵奖励。<br><a href="skills/motivation/assets/ppo/README.md">示例说明与素材来源</a></td>
+  </tr>
+  <tr>
+    <td align="center"><a href="skills/motivation/assets/ppo/motivation.excalidraw">可编辑源文件</a> · <a href="skills/motivation/assets/ppo/motivation.pdf">PDF</a></td><td></td>
+  </tr>
 </table>
 
 ## Method 示例
@@ -91,6 +99,14 @@ git clone https://github.com/Dhs2004/draw-skills-motivation_method.git
 ![GiGPO method](skills/method/assets/gigpo/method.png)
 
 [可编辑源文件](skills/method/assets/gigpo/method.excalidraw) · [PDF](skills/method/assets/gigpo/method.pdf) · [公式源码](skills/method/assets/gigpo/formulas) · [示例说明](skills/method/assets/gigpo/README.md)
+
+### PPO
+
+基于 [Proximal Policy Optimization Algorithms (2017)](https://arxiv.org/abs/1707.06347) 的 PPO-Clip，展示 rollout、GAE、概率比率、多轮 mini-batch 更新，以及正负优势下的裁剪形状。
+
+![PPO method](skills/method/assets/ppo/method.png)
+
+[可编辑源文件](skills/method/assets/ppo/method.excalidraw) · [PDF](skills/method/assets/ppo/method.pdf) · [公式源码](skills/method/assets/ppo/formulas) · [示例说明](skills/method/assets/ppo/README.md)
 
 示例均为公开论文的重新绘制，用于说明绘图风格。简化范围和素材来源见 [示例说明](skills/method/references/public-examples.md)。
 

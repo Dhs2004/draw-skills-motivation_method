@@ -85,7 +85,7 @@ git clone https://github.com/Dhs2004/draw-skills-motivation_method.git
 
 ### GiGPO
 
-基于 [Group-in-Group Policy Optimization (2025)](https://arxiv.org/abs/2505.10978)，展开多步环境交互、重复状态分组、两层优势与策略更新；附折扣回报和逐动作信用分配的数值示例。
+基于 [Group-in-Group Policy Optimization (2025)](https://arxiv.org/abs/2505.10978)，展开多步环境交互、重复状态分组、两层优势与策略更新；以紧凑流程展示折扣回报与动作信用分配。
 
 ![GiGPO method](skills/method/assets/gigpo/method.png)
 

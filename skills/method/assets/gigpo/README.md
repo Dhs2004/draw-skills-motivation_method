@@ -13,13 +13,13 @@
 - 融合 A_(i,t)=A_i^E+ωA_(i,t)^S，并用于裁剪策略目标。旧策略定义重要性比率，独立参考策略定义 KL 锚点。这两个角色不同；GiGPO 不训练额外的价值 critic。
 - 目标函数按论文的 action-level 表达；为节省空间省略了外层采样期望和 KL 的条件变量，保留相同 T 下的 1/(NT) 记法。本图没有替换为 DAPO 的非对称裁剪或 token 长度加权。
 
-### 图中数值例子
+### 补充数值例子（精简版图中未展开）
 
 这是为了可读性构造的示意例子，借鉴论文 Figure 3 的行为模式，不是实验测量，也不是论文实际奖励或超参数配置。
 
 使用 N=2、T=3、γ=0.9、ω=1、F=1，仅在成功轨迹最后一步给奖励 1，失败轨迹给 0；失败轨迹的 end / — 是对终止后零奖励位置的示意。成功轨迹先在 S 选择 2nd item，返回 S 后选择 1st item；失败轨迹在 S 选择 next page。
 
-S 组的三个折扣回报为 [0.81,1,0]，均值 1.81/3=0.603333…。Episode advantages 为 [+0.5,−0.5]；step advantages 为 [+0.206667,+0.396667,−0.603333]；combined advantages 为 [+0.706667,+0.896667,−1.103333]。图中显示两位小数，因此对已四舍五入的单元格求和可能出现 0.01 的舍入差。
+S 组的三个折扣回报为 [0.81,1,0]，均值 1.81/3=0.603333…。Episode advantages 为 [+0.5,−0.5]；step advantages 为 [+0.206667,+0.396667,−0.603333]；combined advantages 为 [+0.706667,+0.896667,−1.103333]。详细数值示例显示两位小数，因此对已四舍五入的单元格求和可能出现 0.01 的舍入差。
 
 该例特别保留“绕路动作仍可能有正优势”：GiGPO 提供相对排序，不保证每个不理想动作都被赋予负值。正文关于未来回报的表述不是因果识别保证。
 
@@ -29,7 +29,7 @@ S 组的三个折扣回报为 [0.81,1,0]，均值 1.81/3=0.603333…。Episode a
 
 **Motivation.** Episode-level rewards blur the contributions of individual decisions in multi-turn agent tasks. GiGPO reuses recurring states within a shared trajectory group to obtain local action comparisons without additional per-state rollouts, combining these signals with episode-level credit.
 
-**Method.** GiGPO collects trajectories under identical tasks and initial states, computes episode-relative advantages, and groups matching state occurrences across trajectories and time steps for discounted-return comparisons. Global and local advantages are fused for clipped policy optimization with a reference KL term. The worked example is illustrative and uses N=2, T=3, γ=0.9, ω=1 and F=1; displayed values are rounded.
+**Method.** GiGPO collects trajectories under identical tasks and initial states, computes episode-relative advantages, and groups matching state occurrences across trajectories and time steps for discounted-return comparisons. Global and local advantages are fused for clipped policy optimization with a reference KL term. The two trajectories are schematic; the figure emphasizes the main grouping and optimization mechanisms.
 
 ## 图标来源
 
@@ -37,3 +37,5 @@ OpenMoji contributors，CC BY-SA 4.0，https://openmoji.org/ 。本次新增 anc
 
 复用 skill 的 Flaticon 机器人 (4712109)、雪花 (642000)、清单 (2098402)、奖杯 (3112946)、天平 (924954) 等。CDN URL 模式为 `https://cdn-icons-png.flaticon.com/512/{floor(id/1000)}/{id}.png`。部分旧素材的作者、具体出版许可和修改来源尚未完全核实，不能据此宣称免署名或自由出版；正式发表应核实对应素材许可。图标授权不适用于本地生成的公式图片。
 
+
+当前 method 已参考 GRPO / Transformer 的信息密度简化：省略逐项数值表、形式化状态集合与重复说明，保留轨迹、两层优势和带 KL 的策略目标。

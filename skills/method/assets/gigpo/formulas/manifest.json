@@ -20,20 +20,10 @@
     "renderSource": "https://www.latexlive.com/"
   },
   {
-    "name": "group",
-    "latex": "\\mathcal I(S)=\\{(i,t):s_t^{(i)}=S\\}",
-    "x": 678.1665542818611,
-    "y": 325.0,
-    "width": 211.66689143627778,
-    "height": 27,
-    "size": 23,
-    "renderSource": "https://www.latexlive.com/"
-  },
-  {
     "name": "return",
     "latex": "Q_{i,t}=\\sum_{k=t}^{T_i}\\gamma^{k-t}r_k^{(i)}",
-    "x": 686.53815,
-    "y": 367.5978,
+    "x": 770,
+    "y": 344,
     "width": 196.9237,
     "height": 31.804399999999998,
     "size": 23,
@@ -42,8 +32,8 @@
   {
     "name": "step",
     "latex": "A_{i,t}^S=\\frac{Q_{i,t}-\\mu_{\\mathcal I(S)}}{F_{\\mathcal I(S)}}",
-    "x": 676.5333750148862,
-    "y": 444.0,
+    "x": 785,
+    "y": 434,
     "width": 157.93324997022748,
     "height": 41,
     "size": 25,
@@ -87,16 +77,6 @@
     "width": 639.5598,
     "height": 32.6656,
     "size": 22,
-    "renderSource": "https://www.latexlive.com/"
-  },
-  {
-    "name": "ratio",
-    "latex": "\\rho_{i,t}=\\frac{\\pi_\\theta(a_t^{(i)}\\mid s_t^{(i)},x)}{\\pi_{\\theta_{\\rm old}}(a_t^{(i)}\\mid s_t^{(i)},x)}",
-    "x": 907.7543183506687,
-    "y": 684.0,
-    "width": 151.4913632986627,
-    "height": 42,
-    "size": 24,
     "renderSource": "https://www.latexlive.com/"
   }
 ]

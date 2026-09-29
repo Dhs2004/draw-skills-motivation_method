@@ -33,30 +33,10 @@
     "name": "objective",
     "latex": "\\widehat J(\\theta)=\\frac{\\sum_{i,t}m_{i,t}\\ell_{i,t}}{\\sum_{i,t}m_{i,t}},\\qquad\\ell_{i,t}=\\min\\!\\left(w_{i,t}\\hat A_i,\\operatorname{clip}(w_{i,t},1-\\epsilon_{\\rm low},1+\\epsilon_{\\rm high})\\hat A_i\\right)",
     "x": 725.428,
-    "y": 490.7908,
+    "y": 448.7908,
     "width": 672.144,
     "height": 40.4184,
     "size": 22,
-    "renderSource": "https://www.latexlive.com/"
-  },
-  {
-    "name": "ratio",
-    "latex": "w_{i,t}=\\frac{\\pi_\\theta(o_{i,t}\\mid q,o_{i,<t})}{\\pi_{\\theta_{\\rm old}}(o_{i,t}\\mid q,o_{i,<t})}",
-    "x": 189.59295652173913,
-    "y": 588,
-    "width": 192.81408695652175,
-    "height": 41,
-    "size": 24,
-    "renderSource": "https://www.latexlive.com/"
-  },
-  {
-    "name": "reward",
-    "latex": "R_i=R_{\\rm correct}(o_i)+R_{\\rm length}(o_i)",
-    "x": 1130.6037000000001,
-    "y": 587.49745,
-    "width": 288.7926,
-    "height": 24.005100000000002,
-    "size": 23,
     "renderSource": "https://www.latexlive.com/"
   }
 ]

@@ -1,11 +1,12 @@
 # Academic Figure Skills
 
-两套用于学术示意图的 Codex skills：从参考图或方法描述生成可编辑 **Excalidraw**，并导出高清 **PNG、PDF、SVG**。
+三套学术绘图 Codex skills：motivation / method 生成可编辑 **Excalidraw** 示意图；figure 使用科学绘图库生成数据图。均支持高清 **PNG、PDF、SVG**。
 
 | Skill | 适用任务 | 布局偏好 |
 |---|---|---|
 | [motivation](skills/motivation/SKILL.md) | 动机、局限、设计理由与方法对比 | 紧凑对比，可纵向组织 |
 | [method](skills/method/SKILL.md) | 方法架构、机制、数据流与训练流程 | 横向一体化、高信息密度，默认无明显步骤编号 |
+| [figure](skills/figure/SKILL.md) | 学术实验数据图、参考风格复绘 | 多面板曲线、双轴、误差带、分组柱状图；提供代码与数据 |
 
 ## 使用
 
@@ -19,7 +20,7 @@ git clone https://github.com/Dhs2004/draw-skills-motivation_method.git
 
 绘制 motivation 图时改用 `skills/motivation/SKILL.md`。修改现有图时提供当前 `.excalidraw`，以保留手动调整。
 
-## 视觉与内容规则
+## Motivation / Method 视觉与内容规则
 
 - 模块背景优先使用原生手绘斜线填充，浅色区分语义区域；保留黑灰框线、清楚的卡通字体和原色实体图标。
 - 以 GRPO / Transformer 的信息密度为基准；通过分层调整字号、精简长句和收紧间距减少留白，避免堆叠数值表与重复说明。
@@ -118,7 +119,42 @@ git clone https://github.com/Dhs2004/draw-skills-motivation_method.git
 
 示例根据对应论文重新绘制，用于说明绘图风格。简化范围和素材来源见 [示例说明](skills/method/references/public-examples.md)。
 
-## 运行与导出
+## Figure 数据图示例
+
+以下三张参考图均为 retry 生成的**模拟数据示例**，使用固定随机种子 `20260929`。展示视觉风格，不代表真实实验结果。figure skill 使用标准科学绘图库，不沿用概念示意图的卡通字体或实体图标规则。
+
+### 青橙三联训练与效率曲线
+
+![青橙三联训练与效率曲线（模拟数据）](skills/figure/assets/examples/triptych_cyan_orange_learning_efficiency_preview.png)
+
+[高清 PNG](skills/figure/assets/examples/triptych_cyan_orange_learning_efficiency_synthetic.png) · [PDF](skills/figure/assets/examples/triptych_cyan_orange_learning_efficiency_synthetic.pdf) · [SVG](skills/figure/assets/examples/triptych_cyan_orange_learning_efficiency_synthetic.svg)
+
+### 衬线六宫格多指标与双轴
+
+![衬线六宫格多指标与双轴（模拟数据）](skills/figure/assets/examples/six_panel_serif_multimetric_dual_axis_preview.png)
+
+[高清 PNG](skills/figure/assets/examples/six_panel_serif_multimetric_dual_axis_synthetic.png) · [PDF](skills/figure/assets/examples/six_panel_serif_multimetric_dual_axis_synthetic.pdf) · [SVG](skills/figure/assets/examples/six_panel_serif_multimetric_dual_axis_synthetic.svg)
+
+### 蓝色系分组柱状图与斜纹基线
+
+![蓝色系分组柱状图与斜纹基线（模拟数据）](skills/figure/assets/examples/grouped_bar_blue_palette_hatched_baseline_preview.png)
+
+[高清 PNG](skills/figure/assets/examples/grouped_bar_blue_palette_hatched_baseline_synthetic.png) · [PDF](skills/figure/assets/examples/grouped_bar_blue_palette_hatched_baseline_synthetic.pdf) · [SVG](skills/figure/assets/examples/grouped_bar_blue_palette_hatched_baseline_synthetic.svg)
+
+[Figure skill](skills/figure/SKILL.md) · [风格说明](skills/figure/references/styles.md) · [绘图代码](skills/figure/scripts/render_examples.py) · [模拟数据 JSON](skills/figure/assets/examples/synthetic_data.json) · [CSV 数据](skills/figure/assets/examples/data)
+
+调用示例：
+
+> 使用 /path/to/draw-skills-motivation_method/skills/figure/SKILL.md，根据参考图与我提供的数据绘制论文实验图，保留配色、布局和标记风格，导出 PNG、PDF、SVG，并保存数据与代码。
+
+需要模拟数据时明确说明允许模拟；图中保留 `SYNTHETIC DATA` 标注。用 Python、NumPy 和 Matplotlib 重放本仓库示例：
+
+```bash
+python skills/figure/scripts/render_examples.py --out ./figure-output \
+  --data skills/figure/assets/examples/synthetic_data.json
+```
+
+## Excalidraw 运行与导出
 
 需要 Node.js 18+、Chromium；新建 skeleton 时还需 Python 3。每套 skill 自带依赖清单及真实 Excalidraw 导出脚本。详细操作见 [渲染指南](skills/method/references/rendering.md)。
 

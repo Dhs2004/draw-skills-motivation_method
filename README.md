@@ -28,33 +28,36 @@ git clone https://github.com/Dhs2004/draw-skills-motivation_method.git
 - 保留科学含义；示意数据不是实验结果，不为填空白编造算法。
 - 导出后查看整图与密集局部，检查字体、图文/连线遮挡和文件一致性。
 
-## GRPO 示例
+## Motivation 示例
+
+<table>
+  <tr>
+    <th width="50%">GRPO</th>
+    <th width="50%">Transformer</th>
+  </tr>
+  <tr>
+    <td align="center"><a href="skills/motivation/assets/grpo/motivation.png"><img src="skills/motivation/assets/grpo/motivation.png" alt="GRPO motivation" width="380"></a></td>
+    <td align="center"><a href="skills/motivation/assets/transformer/motivation.png"><img src="skills/motivation/assets/transformer/motivation.png" alt="Transformer motivation" width="380"></a></td>
+  </tr>
+  <tr>
+    <td align="center"><a href="skills/motivation/assets/grpo/motivation.excalidraw">可编辑源文件</a> · <a href="skills/motivation/assets/grpo/motivation.pdf">PDF</a></td>
+    <td align="center"><a href="skills/motivation/assets/transformer/motivation.excalidraw">可编辑源文件</a> · <a href="skills/motivation/assets/transformer/motivation.pdf">PDF</a></td>
+  </tr>
+</table>
+
+## Method 示例
+
+### GRPO
 
 基于 [DeepSeekMath (2024)](https://arxiv.org/abs/2402.03300) 的结果奖励版 GRPO。
-
-### Motivation
-
-![GRPO motivation](skills/motivation/assets/grpo/motivation.png)
-
-[可编辑源文件](skills/motivation/assets/grpo/motivation.excalidraw) · [PDF](skills/motivation/assets/grpo/motivation.pdf)
-
-### Method
 
 ![GRPO method](skills/method/assets/grpo/method.png)
 
 [可编辑源文件](skills/method/assets/grpo/method.excalidraw) · [PDF](skills/method/assets/grpo/method.pdf)
 
-## Transformer 示例
+### Transformer
 
 基于 [Attention Is All You Need (2017)](https://arxiv.org/abs/1706.03762) 的原始 encoder–decoder Transformer。
-
-### Motivation
-
-![Transformer motivation](skills/motivation/assets/transformer/motivation.png)
-
-[可编辑源文件](skills/motivation/assets/transformer/motivation.excalidraw) · [PDF](skills/motivation/assets/transformer/motivation.pdf)
-
-### Method
 
 ![Transformer method](skills/method/assets/transformer/method.png)
 
